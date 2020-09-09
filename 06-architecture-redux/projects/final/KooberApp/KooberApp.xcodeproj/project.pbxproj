@@ -1,0 +1,2821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281B454A20FBD5B10059CA01 /* MainViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B454920FBD5B10059CA01 /* MainViewControllerState.swift */; };
+		281B457020FBD76C0059CA01 /* InMemoryUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B456F20FBD76C0059CA01 /* InMemoryUserSessionDataStore.swift */; };
+		281B458C20FC20730059CA01 /* AppRunningActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B458B20FC20730059CA01 /* AppRunningActions.swift */; };
+		281B458E20FC22220059CA01 /* ProfileUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B458D20FC22220059CA01 /* ProfileUserInteractions.swift */; };
+		281B459020FC22480059CA01 /* ReduxProfileUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B458F20FC22480059CA01 /* ReduxProfileUserInteractions.swift */; };
+		281B459320FCCD5D0059CA01 /* GettingUsersLocationViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459220FCCD5D0059CA01 /* GettingUsersLocationViewControllerState.swift */; };
+		281B459620FCCDF70059CA01 /* GettingUsersLocationUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459520FCCDF70059CA01 /* GettingUsersLocationUserInteractions.swift */; };
+		281B459820FCCE340059CA01 /* ReduxGettingUsersLocationUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459720FCCE340059CA01 /* ReduxGettingUsersLocationUserInteractions.swift */; };
+		281B459B20FCE62A0059CA01 /* SignedInActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459A20FCE62A0059CA01 /* SignedInActions.swift */; };
+		281B459D20FCE6970059CA01 /* NewRideReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459C20FCE6970059CA01 /* NewRideReducer.swift */; };
+		281B459F20FE26350059CA01 /* SignedInViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B459E20FE26350059CA01 /* SignedInViewControllerState.swift */; };
+		281B45A120FE2C440059CA01 /* SignedInReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45A020FE2C440059CA01 /* SignedInReducer.swift */; };
+		281B45A320FE303B0059CA01 /* SignedInGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45A220FE303B0059CA01 /* SignedInGetters.swift */; };
+		281B45A620FE338E0059CA01 /* SignedInUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45A520FE338E0059CA01 /* SignedInUserInteractions.swift */; };
+		281B45A820FE33CF0059CA01 /* ReduxSignedInUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45A720FE33CF0059CA01 /* ReduxSignedInUserInteractions.swift */; };
+		281B45AC21024D0E0059CA01 /* PickMeUpViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45AB21024D0E0059CA01 /* PickMeUpViewControllerState.swift */; };
+		281B45AF21024DB80059CA01 /* MapViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45AE21024DB80059CA01 /* MapViewControllerState.swift */; };
+		281B45B3210256900059CA01 /* PickMeUpUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45B2210256900059CA01 /* PickMeUpUserInteractions.swift */; };
+		281B45B5210256B20059CA01 /* ReduxPickMeUpUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45B4210256B20059CA01 /* ReduxPickMeUpUserInteractions.swift */; };
+		281B45B7210256EB0059CA01 /* PickMeUpActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45B6210256EB0059CA01 /* PickMeUpActions.swift */; };
+		281B45B92102571B0059CA01 /* PickMeUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45B82102571B0059CA01 /* PickMeUpReducer.swift */; };
+		281B45BE210272970059CA01 /* DropoffLocationPickerViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45BD210272970059CA01 /* DropoffLocationPickerViewControllerState.swift */; };
+		281B45C0210272B00059CA01 /* DropoffLocationPickerUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45BF210272B00059CA01 /* DropoffLocationPickerUserInteractions.swift */; };
+		281B45C2210272F30059CA01 /* ReduxDropoffLocationPickerUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45C1210272F30059CA01 /* ReduxDropoffLocationPickerUserInteractions.swift */; };
+		281B45C42102732E0059CA01 /* DropoffLocationPickerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45C32102732E0059CA01 /* DropoffLocationPickerActions.swift */; };
+		281B45C621027E1A0059CA01 /* PickMeUpGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45C521027E1A0059CA01 /* PickMeUpGetters.swift */; };
+		281B45C8210286850059CA01 /* DropoffLocationPickerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45C7210286850059CA01 /* DropoffLocationPickerReducer.swift */; };
+		281B45CD210398CA0059CA01 /* RideOptionPickerUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45CC210398CA0059CA01 /* RideOptionPickerUserInteractions.swift */; };
+		281B45CF210399090059CA01 /* ReduxRideOptionPickerUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45CE210399090059CA01 /* ReduxRideOptionPickerUserInteractions.swift */; };
+		281B45D1210399700059CA01 /* RideOptionPickerViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45D0210399700059CA01 /* RideOptionPickerViewControllerState.swift */; };
+		281B45D321039E780059CA01 /* RideOptionPickerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45D221039E780059CA01 /* RideOptionPickerActions.swift */; };
+		281B45D52103A0080059CA01 /* RideOptionPickerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B45D42103A0080059CA01 /* RideOptionPickerReducer.swift */; };
+		281EA596242F83EA00124773 /* ReSwiftStorePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EA595242F83EA00124773 /* ReSwiftStorePublisher.swift */; };
+		28261F29211FB045003AA887 /* UserSessionStatePersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28261F28211FB045003AA887 /* UserSessionStatePersister.swift */; };
+		28261F2B211FB085003AA887 /* ReduxUserSessionStatePersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28261F2A211FB085003AA887 /* ReduxUserSessionStatePersister.swift */; };
+		287665EA20864B1D00564D47 /* NewRideRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287665E920864B1D00564D47 /* NewRideRepository.swift */; };
+		287665EC20864B8300564D47 /* KooberNewRideRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287665EB20864B8300564D47 /* KooberNewRideRepository.swift */; };
+		28861D4C2103BD5D00D80D72 /* WaitingForPickupUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D4B2103BD5D00D80D72 /* WaitingForPickupUserInteractions.swift */; };
+		28861D502103BDC600D80D72 /* ReduxWaitingForPickupUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D4F2103BDC600D80D72 /* ReduxWaitingForPickupUserInteractions.swift */; };
+		28861D542103D8FE00D80D72 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D532103D8FE00D80D72 /* OptionalExtensions.swift */; };
+		28861D572103D9AE00D80D72 /* GettingUsersLocationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D562103D9AE00D80D72 /* GettingUsersLocationActions.swift */; };
+		28861D592103DA1D00D80D72 /* GettingUsersLocationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D582103DA1D00D80D72 /* GettingUsersLocationReducer.swift */; };
+		28861D5C2104E81F00D80D72 /* ProfileViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D5B2104E81F00D80D72 /* ProfileViewControllerState.swift */; };
+		28861D602104EDD900D80D72 /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D5F2104EDD900D80D72 /* ProfileTableView.swift */; };
+		28861D622104EEBE00D80D72 /* NiblessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D612104EEBE00D80D72 /* NiblessTableView.swift */; };
+		28861D642104EFCA00D80D72 /* UITableViewCellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D632104EFCA00D80D72 /* UITableViewCellIdentifiers.swift */; };
+		28861D672104F2A300D80D72 /* ProfileActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D662104F2A300D80D72 /* ProfileActions.swift */; };
+		28861D692104F2BA00D80D72 /* ProfileReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D682104F2BA00D80D72 /* ProfileReducer.swift */; };
+		28861D6B2104FEB800D80D72 /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28861D6A2104FEB800D80D72 /* MapViewState.swift */; };
+		2897C71F20F7ABFA00D91654 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3B980E20EFE01F001A3187 /* ReSwift.framework */; };
+		2897C72020F7ABFA00D91654 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3B980E20EFE01F001A3187 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2897C72620F7ACEB00D91654 /* OnboardingGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897C72520F7ACEB00D91654 /* OnboardingGetters.swift */; };
+		2897C72820F7B94800D91654 /* AppRunningGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897C72720F7B94800D91654 /* AppRunningGetters.swift */; };
+		28B10BF620BDECE400122AF2 /* Koober_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B10BF420BDECE400122AF2 /* Koober_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28B10BF920BDECE400122AF2 /* Koober_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B10BF220BDECE300122AF2 /* Koober_iOS.framework */; };
+		28B10BFA20BDECE400122AF2 /* Koober_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28B10BF220BDECE300122AF2 /* Koober_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28B10C2020BDEEE800122AF2 /* KooberAppDepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */; };
+		28B10C2220BDEF2400122AF2 /* KooberOnboardingDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */; };
+		28B10C2620BDEF4C00122AF2 /* KooberPickMeUpDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */; };
+		28B10C2820BDEF6400122AF2 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
+		28B10C2920BDEF6400122AF2 /* KooberUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89C61FAD67360096B294 /* KooberUIKit.framework */; };
+		28B10C2A20BDEFB600122AF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1541FAD6CC0009B5587 /* MainViewController.swift */; };
+		28B10C2B20BDEFC600122AF2 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1531FAD6CC0009B5587 /* LaunchViewController.swift */; };
+		28B10C2C20BDEFC600122AF2 /* LaunchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1521FAD6CC0009B5587 /* LaunchRootView.swift */; };
+		28B10C2D20BDEFD000122AF2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1561FAD6CC0009B5587 /* OnboardingViewController.swift */; };
+		28B10C2E20BDEFED00122AF2 /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16F1FAD6CC0009B5587 /* SignedInViewController.swift */; };
+		28B10C2F20BDEFED00122AF2 /* SignedInRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16E1FAD6CC0009B5587 /* SignedInRootView.swift */; };
+		28B10C3020BDF00B00122AF2 /* PickMeUpRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1681FAD6CC0009B5587 /* PickMeUpRootView.swift */; };
+		28B10C3120BDF00B00122AF2 /* PickMeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1691FAD6CC0009B5587 /* PickMeUpViewController.swift */; };
+		28B10C3320BDF08F00122AF2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1611FAD6CC0009B5587 /* WelcomeViewController.swift */; };
+		28B10C3420BDF09500122AF2 /* WelcomeRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1601FAD6CC0009B5587 /* WelcomeRootView.swift */; };
+		28B10C3520BDF09A00122AF2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B15E1FAD6CC0009B5587 /* SignUpViewController.swift */; };
+		28B10C3620BDF09A00122AF2 /* SignUpRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B15D1FAD6CC0009B5587 /* SignUpRootView.swift */; };
+		28B10C3720BDF09E00122AF2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B15B1FAD6CC0009B5587 /* SignInViewController.swift */; };
+		28B10C3820BDF09E00122AF2 /* SignInRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1581FAD6CC0009B5587 /* SignInRootView.swift */; };
+		28B10C3920BDF0A800122AF2 /* GettingUsersLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA1821FE6DE8F00864536 /* GettingUsersLocationViewController.swift */; };
+		28B10C3A20BDF0A800122AF2 /* GettingUsersLocationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA1841FE6DF2200864536 /* GettingUsersLocationRootView.swift */; };
+		28B10C3B20BDF0AC00122AF2 /* WaitingForPickupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1751FAD6CC0009B5587 /* WaitingForPickupViewController.swift */; };
+		28B10C3C20BDF0AC00122AF2 /* WaitingForPickupRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1741FAD6CC0009B5587 /* WaitingForPickupRootView.swift */; };
+		28B10C3D20BDF0B100122AF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F198F521FB69DC9008F51B6 /* ProfileViewController.swift */; };
+		28B10C3E20BDF0B100122AF2 /* ProfileContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1721FAD6CC0009B5587 /* ProfileContentViewController.swift */; };
+		28B10C3F20BDF0B100122AF2 /* ProfileContentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1711FAD6CC0009B5587 /* ProfileContentRootView.swift */; };
+		28B10C4020BDF0BB00122AF2 /* PickMeUpMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1671FAD6CC0009B5587 /* PickMeUpMapViewController.swift */; };
+		28B10C4120BDF0BB00122AF2 /* PickMeUpMapRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1661FAD6CC0009B5587 /* PickMeUpMapRootView.swift */; };
+		28B10C4220BDF0BB00122AF2 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1381FAD6CBF009B5587 /* MapAnnotationView.swift */; };
+		28B10C4420BDF0BF00122AF2 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B13F1FAD6CBF009B5587 /* MapAnnotation.swift */; };
+		28B10C4520BDF0BF00122AF2 /* MapAnnotationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1401FAD6CBF009B5587 /* MapAnnotationType.swift */; };
+		28B10C4620BDF0BF00122AF2 /* MapAnnotation+MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1411FAD6CBF009B5587 /* MapAnnotation+MapKit.swift */; };
+		28B10C4720BDF0BF00122AF2 /* MapAnnotationDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1421FAD6CBF009B5587 /* MapAnnotationDiff.swift */; };
+		28B10C4820BDF0C500122AF2 /* DropoffLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F198F541FB6AB1C008F51B6 /* DropoffLocationPickerViewController.swift */; };
+		28B10C4920BDF0C500122AF2 /* DropoffLocationPickerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1651FAD6CC0009B5587 /* DropoffLocationPickerContentViewController.swift */; };
+		28B10C4A20BDF0C500122AF2 /* DropoffLocationPickerContentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1641FAD6CC0009B5587 /* DropoffLocationPickerContentRootView.swift */; };
+		28B10C4B20BDF0C900122AF2 /* RideOptionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16A1FAD6CC0009B5587 /* RideOptionPickerViewController.swift */; };
+		28B10C4C20BDF0C900122AF2 /* RideOptionSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16B1FAD6CC0009B5587 /* RideOptionSegmentedControl.swift */; };
+		28B10C4D20BDF0CE00122AF2 /* RideOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1451FAD6CBF009B5587 /* RideOptionButton.swift */; };
+		28B10C4E20BDF0CE00122AF2 /* RideOptionSegmentButtonImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1461FAD6CBF009B5587 /* RideOptionSegmentButtonImageLoader.swift */; };
+		28B10C4F20BDF0D300122AF2 /* SendingRideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16D1FAD6CC0009B5587 /* SendingRideRequestViewController.swift */; };
+		28B10C5020BDF0D300122AF2 /* SendingRideRequestRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16C1FAD6CC0009B5587 /* SendingRideRequestRootView.swift */; };
+		28B10C5120BDF15500122AF2 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
+		28B10C5420BDF16000122AF2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
+		28B10C6D20BE02A600122AF2 /* PickMeUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B10C6C20BE02A600122AF2 /* PickMeUpState.swift */; };
+		28B10C6F20BE02B300122AF2 /* PickMeUpRequestProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B10C6E20BE02B300122AF2 /* PickMeUpRequestProgress.swift */; };
+		28BD4F4B205444BC007C7245 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD4F4A205444BC007C7245 /* Secret.swift */; };
+		28BD4F4F20544ECC007C7245 /* ErrorMessagePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD4F4E20544ECC007C7245 /* ErrorMessagePresentation.swift */; };
+		28CAAFBB21528E4700B154ED /* KooberSignedInDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CAAFBA21528E4700B154ED /* KooberSignedInDependencyContainer.swift */; };
+		9F128670205F661B00384B2C /* RideOptionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12866F205F661B00384B2C /* RideOptionRepository.swift */; };
+		9F149F3F1FB898AE0016EA3C /* InBundleImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F149F3E1FB898AE0016EA3C /* InBundleImageCache.swift */; };
+		9F149F411FB9ED800016EA3C /* FakeNewRideRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F149F401FB9ED800016EA3C /* FakeNewRideRemoteAPI.swift */; };
+		9F198F4D1FB6907F008F51B6 /* NamedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F198F4C1FB6907F008F51B6 /* NamedLocation.swift */; };
+		9F198F4F1FB69936008F51B6 /* FakeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F198F4E1FB69936008F51B6 /* FakeURL.swift */; };
+		9F3B983020EFE03C001A3187 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3B980E20EFE01F001A3187 /* ReSwift.framework */; };
+		9F3BA1142061904200A84852 /* KooberRideOptionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BA1132061904200A84852 /* KooberRideOptionRepository.swift */; };
+		9F3F1F6720DC409400BE3BC7 /* ErrorPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F1F6620DC409400BE3BC7 /* ErrorPresentation.swift */; };
+		9F3F1FBF20DF441D00BE3BC7 /* UIViewController+ErrorPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F1FBE20DF441D00BE3BC7 /* UIViewController+ErrorPresentation.swift */; };
+		9F403F2220951A69008916F4 /* RideOptionSegmentedControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1481FAD6CBF009B5587 /* RideOptionSegmentedControlState.swift */; };
+		9F403F2520951AA1008916F4 /* RideOptionSegmentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1491FAD6CBF009B5587 /* RideOptionSegmentState.swift */; };
+		9F403F2920951C35008916F4 /* RideOptionSegmentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B14A1FAD6CBF009B5587 /* RideOptionSegmentsFactory.swift */; };
+		9F41F16C1FE77E9100C7EABF /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41F16B1FE77E9100C7EABF /* Locator.swift */; };
+		9F41F16F1FE77EDC00C7EABF /* FakeLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41F16E1FE77EDC00C7EABF /* FakeLocator.swift */; };
+		9F41F17D1FE7FE0500C7EABF /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41F17C1FE7FE0500C7EABF /* NewAccount.swift */; };
+		9F41F17F1FE80AB900C7EABF /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41F17E1FE80AB900C7EABF /* ErrorMessage.swift */; };
+		9F47B0D41FAD6C7F009B5587 /* KooberKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B08D1FAD6C7E009B5587 /* KooberKitError.swift */; };
+		9F47B0F21FAD6C7F009B5587 /* NewRideRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0B21FAD6C7E009B5587 /* NewRideRemoteAPI.swift */; };
+		9F47B0F31FAD6C7F009B5587 /* AuthRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0B31FAD6C7E009B5587 /* AuthRemoteAPI.swift */; };
+		9F47B0F81FAD6C7F009B5587 /* KooberCloudNewRideRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0BB1FAD6C7E009B5587 /* KooberCloudNewRideRemoteAPI.swift */; };
+		9F47B0F91FAD6C7F009B5587 /* FakeAuthRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0BC1FAD6C7E009B5587 /* FakeAuthRemoteAPI.swift */; };
+		9F47B0FA1FAD6C7F009B5587 /* KooberCloudAuthRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0BD1FAD6C7E009B5587 /* KooberCloudAuthRemoteAPI.swift */; };
+		9F47B0FB1FAD6C7F009B5587 /* RemoteUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0BE1FAD6C7E009B5587 /* RemoteUserSession.swift */; };
+		9F47B1061FAD6C7F009B5587 /* RideOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0CB1FAD6C7E009B5587 /* RideOption.swift */; };
+		9F47B1091FAD6C7F009B5587 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0CE1FAD6C7E009B5587 /* Location.swift */; };
+		9F47B10A1FAD6C7F009B5587 /* LoadedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0CF1FAD6C7E009B5587 /* LoadedState.swift */; };
+		9F47B10B1FAD6C7F009B5587 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0D01FAD6C7E009B5587 /* RemoteImage.swift */; };
+		9F47B10D1FAD6C7F009B5587 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0D21FAD6C7E009B5587 /* UserProfile.swift */; };
+		9F47B10E1FAD6C7F009B5587 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B0D31FAD6C7E009B5587 /* UserSession.swift */; };
+		9F47B17D1FAD6CC0009B5587 /* ImageCacheKingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B12D1FAD6CBF009B5587 /* ImageCacheKingfisher.swift */; };
+		9F47B17E1FAD6CC0009B5587 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B12E1FAD6CBF009B5587 /* ImageCache.swift */; };
+		9F47B17F1FAD6CC0009B5587 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B12F1FAD6CBF009B5587 /* NiblessView.swift */; };
+		9F47B1801FAD6CC0009B5587 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1301FAD6CBF009B5587 /* NiblessViewController.swift */; };
+		9F47B1811FAD6CC0009B5587 /* ViewControllerContainment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1311FAD6CBF009B5587 /* ViewControllerContainment.swift */; };
+		9F47B1841FAD6CC0009B5587 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1341FAD6CBF009B5587 /* UIStackViewExtensions.swift */; };
+		9F47B1951FAD6CC0009B5587 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B14E1FAD6CC0009B5587 /* Color.swift */; };
+		9F47B1961FAD6CC0009B5587 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B14F1FAD6CC0009B5587 /* UIColor+Hex.swift */; };
+		9F4CA16B1FE5C0CF00864536 /* UserSessionCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA16A1FE5C0CF00864536 /* UserSessionCoding.swift */; };
+		9F4CA16E1FE5C10700864536 /* UserSessionPropertyListCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA16D1FE5C10700864536 /* UserSessionPropertyListCoder.swift */; };
+		9F4CA1791FE6BF9700864536 /* NewRideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA1781FE6BF9700864536 /* NewRideRequest.swift */; };
+		9F550EBC20F017BC00F502CE /* SignInViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EBB20F017BC00F502CE /* SignInViewControllerState.swift */; };
+		9F550EBE20F0193A00F502CE /* SignInUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EBD20F0193A00F502CE /* SignInUserInteractions.swift */; };
+		9F550EC020F01D6200F502CE /* SignInLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EBF20F01D6200F502CE /* SignInLogic.swift */; };
+		9F550EC220F15F9500F502CE /* SignInActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EC120F15F9500F502CE /* SignInActions.swift */; };
+		9F550EC420F1991D00F502CE /* SignInReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EC320F1991D00F502CE /* SignInReducer.swift */; };
+		9F550EC820F19B9100F502CE /* ReduxSignInUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EC720F19B9100F502CE /* ReduxSignInUserInteractions.swift */; };
+		9F550ECA20F19C4500F502CE /* KooberKitActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EC920F19C4500F502CE /* KooberKitActionDispatcher.swift */; };
+		9F550ECC20F283FB00F502CE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550ECB20F283FB00F502CE /* AppState.swift */; };
+		9F550ED120F2848D00F502CE /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550ED020F2848D00F502CE /* AppReducer.swift */; };
+		9F550ED320F284BC00F502CE /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550ED220F284BC00F502CE /* Reducers.swift */; };
+		9F550ED720F28BDC00F502CE /* AppRunningState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550ED620F28BDC00F502CE /* AppRunningState.swift */; };
+		9F550ED920F28C6200F502CE /* NewRideState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550ED820F28C6200F502CE /* NewRideState.swift */; };
+		9F550EDD20F28E1000F502CE /* LaunchingUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EDC20F28E1000F502CE /* LaunchingUserInteractions.swift */; };
+		9F550EDF20F28E3A00F502CE /* ReduxLaunchingUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EDE20F28E3A00F502CE /* ReduxLaunchingUserInteractions.swift */; };
+		9F550EE120F2903A00F502CE /* LaunchingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EE020F2903A00F502CE /* LaunchingActions.swift */; };
+		9F550EE320F290B600F502CE /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EE220F290B600F502CE /* AuthenticationState.swift */; };
+		9F550EE520F2938600F502CE /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EE420F2938600F502CE /* AppLogic.swift */; };
+		9F550EE820F2965B00F502CE /* ActionPrinterMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EE720F2965B00F502CE /* ActionPrinterMiddleware.swift */; };
+		9F550EEA20F29F4300F502CE /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EE920F29F4300F502CE /* OnboardingState.swift */; };
+		9F550EF520F2A73800F502CE /* ScopedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EF420F2A73800F502CE /* ScopedState.swift */; };
+		9F550F0020F2E05200F502CE /* EntryPointGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550EFF20F2E05200F502CE /* EntryPointGetters.swift */; };
+		9F550F0220F2E6B400F502CE /* OnboardingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0120F2E6B400F502CE /* OnboardingActions.swift */; };
+		9F550F0420F2E70000F502CE /* OnboardingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0320F2E70000F502CE /* OnboardingReducer.swift */; };
+		9F550F0620F2E75800F502CE /* OnboardingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0520F2E75800F502CE /* OnboardingLogic.swift */; };
+		9F550F0820F2E87700F502CE /* WelcomeUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0720F2E87700F502CE /* WelcomeUserInteractions.swift */; };
+		9F550F0A20F2E8AE00F502CE /* ReduxWelcomeUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0920F2E8AE00F502CE /* ReduxWelcomeUserInteractions.swift */; };
+		9F550F0C20F2EBE100F502CE /* AppRunningReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0B20F2EBE100F502CE /* AppRunningReducer.swift */; };
+		9F550F0E20F3A42100F502CE /* WelcomeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0D20F3A42000F502CE /* WelcomeActions.swift */; };
+		9F550F1020F3A70F00F502CE /* OnboardingUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F0F20F3A70F00F502CE /* OnboardingUserInteractions.swift */; };
+		9F550F1220F3A75D00F502CE /* ReduxOnboardingUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F550F1120F3A75D00F502CE /* ReduxOnboardingUserInteractions.swift */; };
+		9F6EB19E1FD9CA050050811C /* ObservableUISearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EB19D1FD9CA050050811C /* ObservableUISearchController.swift */; };
+		9F8799052055B6EA002BF861 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8799042055B6EA002BF861 /* LocationRepository.swift */; };
+		9F8799072055B741002BF861 /* KooberLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8799062055B741002BF861 /* KooberLocationRepository.swift */; };
+		9F8A89B11FAD64D50096B294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A89B01FAD64D50096B294 /* Assets.xcassets */; };
+		9F8A89BF1FAD66BA0096B294 /* RWDevConLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A89BC1FAD66BA0096B294 /* RWDevConLaunchScreen.xib */; };
+		9F8A89C01FAD66BA0096B294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A89BD1FAD66BA0096B294 /* AppDelegate.swift */; };
+		9F8A89CA1FAD67360096B294 /* KooberUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8A89C81FAD67360096B294 /* KooberUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8A89CD1FAD67360096B294 /* KooberUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89C61FAD67360096B294 /* KooberUIKit.framework */; };
+		9F8A89CE1FAD67360096B294 /* KooberUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89C61FAD67360096B294 /* KooberUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F8A89DC1FAD67480096B294 /* KooberKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8A89DA1FAD67480096B294 /* KooberKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8A89DF1FAD67480096B294 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
+		9F8A89E01FAD67480096B294 /* KooberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F8D156120F7F56100AC5CDF /* LaunchViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D156020F7F56100AC5CDF /* LaunchViewControllerState.swift */; };
+		9F8D158820F8461900AC5CDF /* LaunchingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D158720F8461900AC5CDF /* LaunchingReducer.swift */; };
+		9F8D158B20FA4A2E00AC5CDF /* SignUpViewControllerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D158A20FA4A2E00AC5CDF /* SignUpViewControllerState.swift */; };
+		9F8D158D20FA4A6300AC5CDF /* SignUpUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D158C20FA4A6300AC5CDF /* SignUpUserInteractions.swift */; };
+		9F8D158F20FA4A9800AC5CDF /* ReduxSignUpUserInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D158E20FA4A9800AC5CDF /* ReduxSignUpUserInteractions.swift */; };
+		9F8D159120FA4AD000AC5CDF /* SignUpActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D159020FA4AD000AC5CDF /* SignUpActions.swift */; };
+		9F8D159320FA656000AC5CDF /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D159220FA656000AC5CDF /* SignUpReducer.swift */; };
+		9F942082208A411A002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
+		9F9420DE208A4174002ACDC7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
+		9F9420E1208A4192002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
+		9F9420E2208A4294002ACDC7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
+		9F9420E3208A4294002ACDC7 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F9420EE208A42BE002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
+		9F9420EF208A42BE002ACDC7 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F96BDE1209E685600F13F88 /* RideOptionPickerRideOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE0209E685500F13F88 /* RideOptionPickerRideOptions.swift */; };
+		9F96BDF1209E69B300F13F88 /* UserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE4209E69B300F13F88 /* UserSessionDataStore.swift */; };
+		9F96BDF2209E69B300F13F88 /* FakeUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE6209E69B300F13F88 /* FakeUserSessionDataStore.swift */; };
+		9F96BDF3209E69B300F13F88 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE8209E69B300F13F88 /* KeychainItem.swift */; };
+		9F96BDF4209E69B300F13F88 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE9209E69B300F13F88 /* Keychain.swift */; };
+		9F96BDF5209E69B300F13F88 /* KeychainUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDEA209E69B300F13F88 /* KeychainUserSessionDataStore.swift */; };
+		9F96BDF6209E69B300F13F88 /* FileUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDEB209E69B300F13F88 /* FileUserSessionDataStore.swift */; };
+		9F96BDF7209E69B300F13F88 /* RideOptionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDED209E69B300F13F88 /* RideOptionDataStore.swift */; };
+		9F96BDF8209E69B300F13F88 /* RideOptionDataStoreInMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDEF209E69B300F13F88 /* RideOptionDataStoreInMemory.swift */; };
+		9F96BDF9209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDF0209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift */; };
+		9F98007420B4C59600BF2221 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F98007320B4C59600BF2221 /* NiblessNavigationController.swift */; };
+		9FA1D5E91FB1739300526A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A89B01FAD64D50096B294 /* Assets.xcassets */; };
+		9FBB2EA51FAE450E0086363B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB2EA41FAE450E0086363B /* Identifiable.swift */; };
+		9FC897851FAE512400B1A8B0 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		281EA589242F83C200124773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F13C0E81E7B3E4000D8442C;
+			remoteInfo = SwiftLintIntegration;
+		};
+		2897C72120F7ABFA00D91654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 625E66821C1FF97E0027C288;
+			remoteInfo = "ReSwift-iOS";
+		};
+		28B10BF720BDECE400122AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F8A899E1FAD64D50096B294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B10BF120BDECE300122AF2;
+			remoteInfo = "Koober-iOS";
+		};
+		9F3B980D20EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 625E66831C1FF97E0027C288;
+			remoteInfo = "ReSwift-iOS";
+		};
+		9F3B980F20EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 625E669A1C1FFA3C0027C288;
+			remoteInfo = "ReSwift-iOSTests";
+		};
+		9F3B981120EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF7B1C30C4AA00D63A58;
+			remoteInfo = "ReSwift-macOS";
+		};
+		9F3B981320EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF871C30C4DB00D63A58;
+			remoteInfo = "ReSwift-macOSTests";
+		};
+		9F3B981520EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF4E1C30C18D00D63A58;
+			remoteInfo = "ReSwift-tvOS";
+		};
+		9F3B981720EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF641C30C1AC00D63A58;
+			remoteInfo = "ReSwift-tvOSTests";
+		};
+		9F3B981920EFE01F001A3187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25DBCF371C30BF2B00D63A58;
+			remoteInfo = "ReSwift-watchOS";
+		};
+		9F8A89CB1FAD67360096B294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F8A899E1FAD64D50096B294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F8A89C51FAD67360096B294;
+			remoteInfo = KooberUIKit;
+		};
+		9F8A89DD1FAD67480096B294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F8A899E1FAD64D50096B294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F8A89D71FAD67480096B294;
+			remoteInfo = KooberKit;
+		};
+		9F942076208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63B0AC571D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
+		9F942078208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 631751A81D59766500A9DDDC;
+			remoteInfo = "PMKA+Tests";
+		};
+		9F94207A208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6314113C1D59795700E24B9E;
+			remoteInfo = PMKBridgeTests;
+		};
+		9F94207C208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 630019221D596292003B4E30;
+			remoteInfo = PMKCoreTests;
+		};
+		9F94207E208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 633027EA203CC0060037E136;
+			remoteInfo = PMKDeprecatedTests;
+		};
+		9F942080208A4115002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0244E622047A6CB00ACB4AC;
+			remoteInfo = "PMKJSA+Tests";
+		};
+		9F9420D0208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		9F9420D2208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
+			remoteInfo = "Kingfisher-tvOS";
+		};
+		9F9420D4208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944481C3D01B20088C3E7;
+			remoteInfo = "Kingfisher-macOS";
+		};
+		9F9420D6208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D16799EB1C4E74460020FD12;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		9F9420D8208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+		9F9420DA208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B37667F1C478F940001443F;
+			remoteInfo = "KingfisherTests-tvOS";
+		};
+		9F9420DC208A4169002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D10EC2311C3D632300A4211C;
+			remoteInfo = "KingfisherTests-macOS";
+		};
+		9F9420E4208A4294002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		9F9420F0208A42BE002ACDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F8A89D21FAD67360096B294 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2897C72020F7ABFA00D91654 /* ReSwift.framework in Embed Frameworks */,
+				9F8A89CE1FAD67360096B294 /* KooberUIKit.framework in Embed Frameworks */,
+				9F9420E3208A4294002ACDC7 /* Kingfisher.framework in Embed Frameworks */,
+				28B10BFA20BDECE400122AF2 /* Koober_iOS.framework in Embed Frameworks */,
+				9F9420EF208A42BE002ACDC7 /* PromiseKit.framework in Embed Frameworks */,
+				9F8A89E01FAD67480096B294 /* KooberKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		281B454920FBD5B10059CA01 /* MainViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerState.swift; sourceTree = "<group>"; };
+		281B456F20FBD76C0059CA01 /* InMemoryUserSessionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryUserSessionDataStore.swift; sourceTree = "<group>"; };
+		281B458B20FC20730059CA01 /* AppRunningActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRunningActions.swift; sourceTree = "<group>"; };
+		281B458D20FC22220059CA01 /* ProfileUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserInteractions.swift; sourceTree = "<group>"; };
+		281B458F20FC22480059CA01 /* ReduxProfileUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxProfileUserInteractions.swift; sourceTree = "<group>"; };
+		281B459220FCCD5D0059CA01 /* GettingUsersLocationViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationViewControllerState.swift; sourceTree = "<group>"; };
+		281B459520FCCDF70059CA01 /* GettingUsersLocationUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationUserInteractions.swift; sourceTree = "<group>"; };
+		281B459720FCCE340059CA01 /* ReduxGettingUsersLocationUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxGettingUsersLocationUserInteractions.swift; sourceTree = "<group>"; };
+		281B459A20FCE62A0059CA01 /* SignedInActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInActions.swift; sourceTree = "<group>"; };
+		281B459C20FCE6970059CA01 /* NewRideReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideReducer.swift; sourceTree = "<group>"; };
+		281B459E20FE26350059CA01 /* SignedInViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewControllerState.swift; sourceTree = "<group>"; };
+		281B45A020FE2C440059CA01 /* SignedInReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInReducer.swift; sourceTree = "<group>"; };
+		281B45A220FE303B0059CA01 /* SignedInGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInGetters.swift; sourceTree = "<group>"; };
+		281B45A520FE338E0059CA01 /* SignedInUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInUserInteractions.swift; sourceTree = "<group>"; };
+		281B45A720FE33CF0059CA01 /* ReduxSignedInUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSignedInUserInteractions.swift; sourceTree = "<group>"; };
+		281B45AB21024D0E0059CA01 /* PickMeUpViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpViewControllerState.swift; sourceTree = "<group>"; };
+		281B45AE21024DB80059CA01 /* MapViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerState.swift; sourceTree = "<group>"; };
+		281B45B2210256900059CA01 /* PickMeUpUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpUserInteractions.swift; sourceTree = "<group>"; };
+		281B45B4210256B20059CA01 /* ReduxPickMeUpUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxPickMeUpUserInteractions.swift; sourceTree = "<group>"; };
+		281B45B6210256EB0059CA01 /* PickMeUpActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpActions.swift; sourceTree = "<group>"; };
+		281B45B82102571B0059CA01 /* PickMeUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpReducer.swift; sourceTree = "<group>"; };
+		281B45BD210272970059CA01 /* DropoffLocationPickerViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerViewControllerState.swift; sourceTree = "<group>"; };
+		281B45BF210272B00059CA01 /* DropoffLocationPickerUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerUserInteractions.swift; sourceTree = "<group>"; };
+		281B45C1210272F30059CA01 /* ReduxDropoffLocationPickerUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxDropoffLocationPickerUserInteractions.swift; sourceTree = "<group>"; };
+		281B45C32102732E0059CA01 /* DropoffLocationPickerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerActions.swift; sourceTree = "<group>"; };
+		281B45C521027E1A0059CA01 /* PickMeUpGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpGetters.swift; sourceTree = "<group>"; };
+		281B45C7210286850059CA01 /* DropoffLocationPickerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerReducer.swift; sourceTree = "<group>"; };
+		281B45CC210398CA0059CA01 /* RideOptionPickerUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionPickerUserInteractions.swift; sourceTree = "<group>"; };
+		281B45CE210399090059CA01 /* ReduxRideOptionPickerUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxRideOptionPickerUserInteractions.swift; sourceTree = "<group>"; };
+		281B45D0210399700059CA01 /* RideOptionPickerViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionPickerViewControllerState.swift; sourceTree = "<group>"; };
+		281B45D221039E780059CA01 /* RideOptionPickerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionPickerActions.swift; sourceTree = "<group>"; };
+		281B45D42103A0080059CA01 /* RideOptionPickerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionPickerReducer.swift; sourceTree = "<group>"; };
+		281EA595242F83EA00124773 /* ReSwiftStorePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftStorePublisher.swift; sourceTree = "<group>"; };
+		28261F28211FB045003AA887 /* UserSessionStatePersister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionStatePersister.swift; sourceTree = "<group>"; };
+		28261F2A211FB085003AA887 /* ReduxUserSessionStatePersister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxUserSessionStatePersister.swift; sourceTree = "<group>"; };
+		287665E920864B1D00564D47 /* NewRideRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideRepository.swift; sourceTree = "<group>"; };
+		287665EB20864B8300564D47 /* KooberNewRideRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberNewRideRepository.swift; sourceTree = "<group>"; };
+		28861D4B2103BD5D00D80D72 /* WaitingForPickupUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForPickupUserInteractions.swift; sourceTree = "<group>"; };
+		28861D4F2103BDC600D80D72 /* ReduxWaitingForPickupUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxWaitingForPickupUserInteractions.swift; sourceTree = "<group>"; };
+		28861D532103D8FE00D80D72 /* OptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
+		28861D562103D9AE00D80D72 /* GettingUsersLocationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationActions.swift; sourceTree = "<group>"; };
+		28861D582103DA1D00D80D72 /* GettingUsersLocationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationReducer.swift; sourceTree = "<group>"; };
+		28861D5B2104E81F00D80D72 /* ProfileViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerState.swift; sourceTree = "<group>"; };
+		28861D5F2104EDD900D80D72 /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		28861D612104EEBE00D80D72 /* NiblessTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableView.swift; sourceTree = "<group>"; };
+		28861D632104EFCA00D80D72 /* UITableViewCellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellIdentifiers.swift; sourceTree = "<group>"; };
+		28861D662104F2A300D80D72 /* ProfileActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActions.swift; sourceTree = "<group>"; };
+		28861D682104F2BA00D80D72 /* ProfileReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReducer.swift; sourceTree = "<group>"; };
+		28861D6A2104FEB800D80D72 /* MapViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
+		2897C72520F7ACEB00D91654 /* OnboardingGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGetters.swift; sourceTree = "<group>"; };
+		2897C72720F7B94800D91654 /* AppRunningGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRunningGetters.swift; sourceTree = "<group>"; };
+		28B10BF220BDECE300122AF2 /* Koober_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Koober_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B10BF420BDECE400122AF2 /* Koober_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Koober_iOS.h; sourceTree = "<group>"; };
+		28B10BF520BDECE400122AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B10C6C20BE02A600122AF2 /* PickMeUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpState.swift; sourceTree = "<group>"; };
+		28B10C6E20BE02B300122AF2 /* PickMeUpRequestProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMeUpRequestProgress.swift; sourceTree = "<group>"; };
+		28BD4F4A205444BC007C7245 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		28BD4F4E20544ECC007C7245 /* ErrorMessagePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessagePresentation.swift; sourceTree = "<group>"; };
+		28CAAFBA21528E4700B154ED /* KooberSignedInDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberSignedInDependencyContainer.swift; sourceTree = "<group>"; };
+		9F12866F205F661B00384B2C /* RideOptionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionRepository.swift; sourceTree = "<group>"; };
+		9F149F3E1FB898AE0016EA3C /* InBundleImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBundleImageCache.swift; sourceTree = "<group>"; };
+		9F149F401FB9ED800016EA3C /* FakeNewRideRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewRideRemoteAPI.swift; sourceTree = "<group>"; };
+		9F198F4C1FB6907F008F51B6 /* NamedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedLocation.swift; sourceTree = "<group>"; };
+		9F198F4E1FB69936008F51B6 /* FakeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURL.swift; sourceTree = "<group>"; };
+		9F198F521FB69DC9008F51B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9F198F541FB6AB1C008F51B6 /* DropoffLocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerViewController.swift; sourceTree = "<group>"; };
+		9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReSwift.xcodeproj; path = Carthage/Checkouts/ReSwift/ReSwift.xcodeproj; sourceTree = "<group>"; };
+		9F3BA1132061904200A84852 /* KooberRideOptionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberRideOptionRepository.swift; sourceTree = "<group>"; };
+		9F3F1F6620DC409400BE3BC7 /* ErrorPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresentation.swift; sourceTree = "<group>"; };
+		9F3F1FBE20DF441D00BE3BC7 /* UIViewController+ErrorPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorPresentation.swift"; sourceTree = "<group>"; };
+		9F41F16B1FE77E9100C7EABF /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
+		9F41F16E1FE77EDC00C7EABF /* FakeLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLocator.swift; sourceTree = "<group>"; };
+		9F41F17C1FE7FE0500C7EABF /* NewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
+		9F41F17E1FE80AB900C7EABF /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		9F47B08D1FAD6C7E009B5587 /* KooberKitError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberKitError.swift; sourceTree = "<group>"; };
+		9F47B0B21FAD6C7E009B5587 /* NewRideRemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRideRemoteAPI.swift; sourceTree = "<group>"; };
+		9F47B0B31FAD6C7E009B5587 /* AuthRemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRemoteAPI.swift; sourceTree = "<group>"; };
+		9F47B0BB1FAD6C7E009B5587 /* KooberCloudNewRideRemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberCloudNewRideRemoteAPI.swift; sourceTree = "<group>"; };
+		9F47B0BC1FAD6C7E009B5587 /* FakeAuthRemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAuthRemoteAPI.swift; sourceTree = "<group>"; };
+		9F47B0BD1FAD6C7E009B5587 /* KooberCloudAuthRemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberCloudAuthRemoteAPI.swift; sourceTree = "<group>"; };
+		9F47B0BE1FAD6C7E009B5587 /* RemoteUserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteUserSession.swift; sourceTree = "<group>"; };
+		9F47B0CB1FAD6C7E009B5587 /* RideOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOption.swift; sourceTree = "<group>"; };
+		9F47B0CE1FAD6C7E009B5587 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9F47B0CF1FAD6C7E009B5587 /* LoadedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadedState.swift; sourceTree = "<group>"; };
+		9F47B0D01FAD6C7E009B5587 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		9F47B0D21FAD6C7E009B5587 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		9F47B0D31FAD6C7E009B5587 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KooberAppDepedencyContainer.swift; sourceTree = "<group>"; };
+		9F47B12D1FAD6CBF009B5587 /* ImageCacheKingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheKingfisher.swift; sourceTree = "<group>"; };
+		9F47B12E1FAD6CBF009B5587 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		9F47B12F1FAD6CBF009B5587 /* NiblessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		9F47B1301FAD6CBF009B5587 /* NiblessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		9F47B1311FAD6CBF009B5587 /* ViewControllerContainment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerContainment.swift; sourceTree = "<group>"; };
+		9F47B1341FAD6CBF009B5587 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
+		9F47B1381FAD6CBF009B5587 /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		9F47B13F1FAD6CBF009B5587 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		9F47B1401FAD6CBF009B5587 /* MapAnnotationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationType.swift; sourceTree = "<group>"; };
+		9F47B1411FAD6CBF009B5587 /* MapAnnotation+MapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapAnnotation+MapKit.swift"; sourceTree = "<group>"; };
+		9F47B1421FAD6CBF009B5587 /* MapAnnotationDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationDiff.swift; sourceTree = "<group>"; };
+		9F47B1451FAD6CBF009B5587 /* RideOptionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionButton.swift; sourceTree = "<group>"; };
+		9F47B1461FAD6CBF009B5587 /* RideOptionSegmentButtonImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionSegmentButtonImageLoader.swift; sourceTree = "<group>"; };
+		9F47B1481FAD6CBF009B5587 /* RideOptionSegmentedControlState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionSegmentedControlState.swift; sourceTree = "<group>"; };
+		9F47B1491FAD6CBF009B5587 /* RideOptionSegmentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionSegmentState.swift; sourceTree = "<group>"; };
+		9F47B14A1FAD6CBF009B5587 /* RideOptionSegmentsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionSegmentsFactory.swift; sourceTree = "<group>"; };
+		9F47B14E1FAD6CC0009B5587 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9F47B14F1FAD6CC0009B5587 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		9F47B1521FAD6CC0009B5587 /* LaunchRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRootView.swift; sourceTree = "<group>"; };
+		9F47B1531FAD6CC0009B5587 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		9F47B1541FAD6CC0009B5587 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9F47B1561FAD6CC0009B5587 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9F47B1581FAD6CC0009B5587 /* SignInRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootView.swift; sourceTree = "<group>"; };
+		9F47B15B1FAD6CC0009B5587 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9F47B15D1FAD6CC0009B5587 /* SignUpRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRootView.swift; sourceTree = "<group>"; };
+		9F47B15E1FAD6CC0009B5587 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9F47B1601FAD6CC0009B5587 /* WelcomeRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRootView.swift; sourceTree = "<group>"; };
+		9F47B1611FAD6CC0009B5587 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9F47B1641FAD6CC0009B5587 /* DropoffLocationPickerContentRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerContentRootView.swift; sourceTree = "<group>"; };
+		9F47B1651FAD6CC0009B5587 /* DropoffLocationPickerContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropoffLocationPickerContentViewController.swift; sourceTree = "<group>"; };
+		9F47B1661FAD6CC0009B5587 /* PickMeUpMapRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMeUpMapRootView.swift; sourceTree = "<group>"; };
+		9F47B1671FAD6CC0009B5587 /* PickMeUpMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMeUpMapViewController.swift; sourceTree = "<group>"; };
+		9F47B1681FAD6CC0009B5587 /* PickMeUpRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMeUpRootView.swift; sourceTree = "<group>"; };
+		9F47B1691FAD6CC0009B5587 /* PickMeUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMeUpViewController.swift; sourceTree = "<group>"; };
+		9F47B16A1FAD6CC0009B5587 /* RideOptionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionPickerViewController.swift; sourceTree = "<group>"; };
+		9F47B16B1FAD6CC0009B5587 /* RideOptionSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionSegmentedControl.swift; sourceTree = "<group>"; };
+		9F47B16C1FAD6CC0009B5587 /* SendingRideRequestRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingRideRequestRootView.swift; sourceTree = "<group>"; };
+		9F47B16D1FAD6CC0009B5587 /* SendingRideRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingRideRequestViewController.swift; sourceTree = "<group>"; };
+		9F47B16E1FAD6CC0009B5587 /* SignedInRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedInRootView.swift; sourceTree = "<group>"; };
+		9F47B16F1FAD6CC0009B5587 /* SignedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
+		9F47B1711FAD6CC0009B5587 /* ProfileContentRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContentRootView.swift; sourceTree = "<group>"; };
+		9F47B1721FAD6CC0009B5587 /* ProfileContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContentViewController.swift; sourceTree = "<group>"; };
+		9F47B1741FAD6CC0009B5587 /* WaitingForPickupRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingForPickupRootView.swift; sourceTree = "<group>"; };
+		9F47B1751FAD6CC0009B5587 /* WaitingForPickupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingForPickupViewController.swift; sourceTree = "<group>"; };
+		9F4CA16A1FE5C0CF00864536 /* UserSessionCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionCoding.swift; sourceTree = "<group>"; };
+		9F4CA16D1FE5C10700864536 /* UserSessionPropertyListCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionPropertyListCoder.swift; sourceTree = "<group>"; };
+		9F4CA1781FE6BF9700864536 /* NewRideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideRequest.swift; sourceTree = "<group>"; };
+		9F4CA1821FE6DE8F00864536 /* GettingUsersLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationViewController.swift; sourceTree = "<group>"; };
+		9F4CA1841FE6DF2200864536 /* GettingUsersLocationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersLocationRootView.swift; sourceTree = "<group>"; };
+		9F550EBB20F017BC00F502CE /* SignInViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerState.swift; sourceTree = "<group>"; };
+		9F550EBD20F0193A00F502CE /* SignInUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUserInteractions.swift; sourceTree = "<group>"; };
+		9F550EBF20F01D6200F502CE /* SignInLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLogic.swift; sourceTree = "<group>"; };
+		9F550EC120F15F9500F502CE /* SignInActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInActions.swift; sourceTree = "<group>"; };
+		9F550EC320F1991D00F502CE /* SignInReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInReducer.swift; sourceTree = "<group>"; };
+		9F550EC720F19B9100F502CE /* ReduxSignInUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSignInUserInteractions.swift; sourceTree = "<group>"; };
+		9F550EC920F19C4500F502CE /* KooberKitActionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberKitActionDispatcher.swift; sourceTree = "<group>"; };
+		9F550ECB20F283FB00F502CE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9F550ED020F2848D00F502CE /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		9F550ED220F284BC00F502CE /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
+		9F550ED620F28BDC00F502CE /* AppRunningState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRunningState.swift; sourceTree = "<group>"; };
+		9F550ED820F28C6200F502CE /* NewRideState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideState.swift; sourceTree = "<group>"; };
+		9F550EDC20F28E1000F502CE /* LaunchingUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingUserInteractions.swift; sourceTree = "<group>"; };
+		9F550EDE20F28E3A00F502CE /* ReduxLaunchingUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxLaunchingUserInteractions.swift; sourceTree = "<group>"; };
+		9F550EE020F2903A00F502CE /* LaunchingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingActions.swift; sourceTree = "<group>"; };
+		9F550EE220F290B600F502CE /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
+		9F550EE420F2938600F502CE /* AppLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
+		9F550EE720F2965B00F502CE /* ActionPrinterMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPrinterMiddleware.swift; sourceTree = "<group>"; };
+		9F550EE920F29F4300F502CE /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		9F550EF420F2A73800F502CE /* ScopedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopedState.swift; sourceTree = "<group>"; };
+		9F550EFF20F2E05200F502CE /* EntryPointGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPointGetters.swift; sourceTree = "<group>"; };
+		9F550F0120F2E6B400F502CE /* OnboardingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActions.swift; sourceTree = "<group>"; };
+		9F550F0320F2E70000F502CE /* OnboardingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingReducer.swift; sourceTree = "<group>"; };
+		9F550F0520F2E75800F502CE /* OnboardingLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLogic.swift; sourceTree = "<group>"; };
+		9F550F0720F2E87700F502CE /* WelcomeUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserInteractions.swift; sourceTree = "<group>"; };
+		9F550F0920F2E8AE00F502CE /* ReduxWelcomeUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxWelcomeUserInteractions.swift; sourceTree = "<group>"; };
+		9F550F0B20F2EBE100F502CE /* AppRunningReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRunningReducer.swift; sourceTree = "<group>"; };
+		9F550F0D20F3A42000F502CE /* WelcomeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeActions.swift; sourceTree = "<group>"; };
+		9F550F0F20F3A70F00F502CE /* OnboardingUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUserInteractions.swift; sourceTree = "<group>"; };
+		9F550F1120F3A75D00F502CE /* ReduxOnboardingUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxOnboardingUserInteractions.swift; sourceTree = "<group>"; };
+		9F6EB19D1FD9CA050050811C /* ObservableUISearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableUISearchController.swift; sourceTree = "<group>"; };
+		9F8799042055B6EA002BF861 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		9F8799062055B741002BF861 /* KooberLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberLocationRepository.swift; sourceTree = "<group>"; };
+		9F8A89A61FAD64D50096B294 /* Koober.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Koober.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8A89B01FAD64D50096B294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F8A89B51FAD64D50096B294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8A89BC1FAD66BA0096B294 /* RWDevConLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDevConLaunchScreen.xib; sourceTree = "<group>"; };
+		9F8A89BD1FAD66BA0096B294 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F8A89C61FAD67360096B294 /* KooberUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KooberUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8A89C81FAD67360096B294 /* KooberUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KooberUIKit.h; sourceTree = "<group>"; };
+		9F8A89C91FAD67360096B294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8A89D81FAD67480096B294 /* KooberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KooberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8A89DA1FAD67480096B294 /* KooberKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KooberKit.h; sourceTree = "<group>"; };
+		9F8A89DB1FAD67480096B294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8A89E41FAD67F60096B294 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		9F8D156020F7F56100AC5CDF /* LaunchViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewControllerState.swift; sourceTree = "<group>"; };
+		9F8D158720F8461900AC5CDF /* LaunchingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingReducer.swift; sourceTree = "<group>"; };
+		9F8D158A20FA4A2E00AC5CDF /* SignUpViewControllerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerState.swift; sourceTree = "<group>"; };
+		9F8D158C20FA4A6300AC5CDF /* SignUpUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserInteractions.swift; sourceTree = "<group>"; };
+		9F8D158E20FA4A9800AC5CDF /* ReduxSignUpUserInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSignUpUserInteractions.swift; sourceTree = "<group>"; };
+		9F8D159020FA4AD000AC5CDF /* SignUpActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpActions.swift; sourceTree = "<group>"; };
+		9F8D159220FA656000AC5CDF /* SignUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
+		9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PromiseKit.xcodeproj; path = Carthage/Checkouts/PromiseKit/PromiseKit.xcodeproj; sourceTree = "<group>"; };
+		9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Carthage/Checkouts/Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		9F96BDE0209E685500F13F88 /* RideOptionPickerRideOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionPickerRideOptions.swift; sourceTree = "<group>"; };
+		9F96BDE4209E69B300F13F88 /* UserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionDataStore.swift; sourceTree = "<group>"; };
+		9F96BDE6209E69B300F13F88 /* FakeUserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUserSessionDataStore.swift; sourceTree = "<group>"; };
+		9F96BDE8209E69B300F13F88 /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		9F96BDE9209E69B300F13F88 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		9F96BDEA209E69B300F13F88 /* KeychainUserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUserSessionDataStore.swift; sourceTree = "<group>"; };
+		9F96BDEB209E69B300F13F88 /* FileUserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUserSessionDataStore.swift; sourceTree = "<group>"; };
+		9F96BDED209E69B300F13F88 /* RideOptionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionDataStore.swift; sourceTree = "<group>"; };
+		9F96BDEF209E69B300F13F88 /* RideOptionDataStoreInMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionDataStoreInMemory.swift; sourceTree = "<group>"; };
+		9F96BDF0209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionDataStoreDiskUserPrefs.swift; sourceTree = "<group>"; };
+		9F98007320B4C59600BF2221 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
+		9FBB2EA41FAE450E0086363B /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberOnboardingDependencyContainer.swift; sourceTree = "<group>"; };
+		9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberPickMeUpDependencyContainer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28B10BEE20BDECE300122AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B10C5420BDF16000122AF2 /* Kingfisher.framework in Frameworks */,
+				28B10C5120BDF15500122AF2 /* PromiseKit.framework in Frameworks */,
+				28B10C2820BDEF6400122AF2 /* KooberKit.framework in Frameworks */,
+				28B10C2920BDEF6400122AF2 /* KooberUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89A31FAD64D50096B294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2897C71F20F7ABFA00D91654 /* ReSwift.framework in Frameworks */,
+				9F8A89CD1FAD67360096B294 /* KooberUIKit.framework in Frameworks */,
+				9F9420E2208A4294002ACDC7 /* Kingfisher.framework in Frameworks */,
+				28B10BF920BDECE400122AF2 /* Koober_iOS.framework in Frameworks */,
+				9F9420EE208A42BE002ACDC7 /* PromiseKit.framework in Frameworks */,
+				9F8A89DF1FAD67480096B294 /* KooberKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89C21FAD67360096B294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9420E1208A4192002ACDC7 /* PromiseKit.framework in Frameworks */,
+				9F9420DE208A4174002ACDC7 /* Kingfisher.framework in Frameworks */,
+				9FC897851FAE512400B1A8B0 /* KooberKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89D41FAD67480096B294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3B983020EFE03C001A3187 /* ReSwift.framework in Frameworks */,
+				9F942082208A411A002ACDC7 /* PromiseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281B457220FBDD1B0059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE920F29F4300F502CE /* OnboardingState.swift */,
+				2897C72520F7ACEB00D91654 /* OnboardingGetters.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B457320FBDD2D0059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				9F550F0F20F3A70F00F502CE /* OnboardingUserInteractions.swift */,
+				9F550F1120F3A75D00F502CE /* ReduxOnboardingUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B457420FBDD340059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F550F0120F2E6B400F502CE /* OnboardingActions.swift */,
+				9F550F0320F2E70000F502CE /* OnboardingReducer.swift */,
+				9F550F0520F2E75800F502CE /* OnboardingLogic.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B457520FBE00B0059CA01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9F403F0D209517F0008916F4 /* Welcome */,
+				9F403F0E209517F4008916F4 /* SignIn */,
+				9F403F0F209517FA008916F4 /* SignUp */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		281B457620FC1CC30059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2897C72720F7B94800D91654 /* AppRunningGetters.swift */,
+				9F550ED620F28BDC00F502CE /* AppRunningState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B457720FC1CCC0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				281B458B20FC20730059CA01 /* AppRunningActions.swift */,
+				9F550F0B20F2EBE100F502CE /* AppRunningReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B457820FC1CD30059CA01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9F403F072095170C008916F4 /* Onboard */,
+				9F403F0820951712008916F4 /* SignedIn */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		281B457920FC1D110059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F550ECB20F283FB00F502CE /* AppState.swift */,
+				9F550EFF20F2E05200F502CE /* EntryPointGetters.swift */,
+				281B454920FBD5B10059CA01 /* MainViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B457A20FC1D1B0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE420F2938600F502CE /* AppLogic.swift */,
+				9F550ED020F2848D00F502CE /* AppReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B457B20FC1D5C0059CA01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EDA20F28DE000F502CE /* Launching */,
+				9F550EDB20F28DE600F502CE /* Running */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		281B457C20FC1D810059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F8D156020F7F56100AC5CDF /* LaunchViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B457D20FC1D860059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EDC20F28E1000F502CE /* LaunchingUserInteractions.swift */,
+				9F550EDE20F28E3A00F502CE /* ReduxLaunchingUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B457E20FC1D8E0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE020F2903A00F502CE /* LaunchingActions.swift */,
+				9F8D158720F8461900AC5CDF /* LaunchingReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B457F20FC1DDB0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F550F0D20F3A42000F502CE /* WelcomeActions.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B458020FC1DE30059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				9F550F0720F2E87700F502CE /* WelcomeUserInteractions.swift */,
+				9F550F0920F2E8AE00F502CE /* ReduxWelcomeUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B458120FC1DF90059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EC120F15F9500F502CE /* SignInActions.swift */,
+				9F550EC320F1991D00F502CE /* SignInReducer.swift */,
+				9F550EBF20F01D6200F502CE /* SignInLogic.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B458220FC1DFE0059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EBD20F0193A00F502CE /* SignInUserInteractions.swift */,
+				9F550EC720F19B9100F502CE /* ReduxSignInUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B458320FC1E060059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EBB20F017BC00F502CE /* SignInViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B458420FC1E210059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9F8D159020FA4AD000AC5CDF /* SignUpActions.swift */,
+				9F8D159220FA656000AC5CDF /* SignUpReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B458520FC1E250059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				9F8D158C20FA4A6300AC5CDF /* SignUpUserInteractions.swift */,
+				9F8D158E20FA4A9800AC5CDF /* ReduxSignUpUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B458620FC1E2D0059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F8D158A20FA4A2E00AC5CDF /* SignUpViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B458920FC1E4D0059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9F550ED820F28C6200F502CE /* NewRideState.swift */,
+				281B45A220FE303B0059CA01 /* SignedInGetters.swift */,
+				281B459E20FE26350059CA01 /* SignedInViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B458A20FC1E7C0059CA01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9F403F162095191A008916F4 /* GettingUsersLocation */,
+				9F403F152095190D008916F4 /* PickMeUp */,
+				9F403F13209518F2008916F4 /* ViewProfile */,
+				9F403F14209518FA008916F4 /* WaitingForPickup */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		281B459120FCCD480059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				281B459220FCCD5D0059CA01 /* GettingUsersLocationViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B459420FCCDE20059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B459520FCCDF70059CA01 /* GettingUsersLocationUserInteractions.swift */,
+				281B459720FCCE340059CA01 /* ReduxGettingUsersLocationUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B459920FCE6180059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				281B459C20FCE6970059CA01 /* NewRideReducer.swift */,
+				281B459A20FCE62A0059CA01 /* SignedInActions.swift */,
+				281B45A020FE2C440059CA01 /* SignedInReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B45A420FE33790059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B45A720FE33CF0059CA01 /* ReduxSignedInUserInteractions.swift */,
+				281B45A520FE338E0059CA01 /* SignedInUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B45A921024CEE0059CA01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9F403F1C20951998008916F4 /* Map */,
+				9F403F1B20951990008916F4 /* SelectDropoffLocation */,
+				9F403F1A20951984008916F4 /* SelectRideOption */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		281B45AA21024CF50059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				281B45AB21024D0E0059CA01 /* PickMeUpViewControllerState.swift */,
+				28B10C6C20BE02A600122AF2 /* PickMeUpState.swift */,
+				28B10C6E20BE02B300122AF2 /* PickMeUpRequestProgress.swift */,
+				281B45C521027E1A0059CA01 /* PickMeUpGetters.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B45AD21024D7E0059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				281B45AE21024DB80059CA01 /* MapViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B45B0210256740059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B45B2210256900059CA01 /* PickMeUpUserInteractions.swift */,
+				281B45B4210256B20059CA01 /* ReduxPickMeUpUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B45B12102567B0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				281B45B6210256EB0059CA01 /* PickMeUpActions.swift */,
+				281B45B82102571B0059CA01 /* PickMeUpReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B45BA210272670059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				281B45BD210272970059CA01 /* DropoffLocationPickerViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281B45BB2102726C0059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B45BF210272B00059CA01 /* DropoffLocationPickerUserInteractions.swift */,
+				281B45C1210272F30059CA01 /* ReduxDropoffLocationPickerUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B45BC210272720059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				281B45C32102732E0059CA01 /* DropoffLocationPickerActions.swift */,
+				281B45C7210286850059CA01 /* DropoffLocationPickerReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B45C92103987D0059CA01 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				281B45D221039E780059CA01 /* RideOptionPickerActions.swift */,
+				281B45D42103A0080059CA01 /* RideOptionPickerReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		281B45CA210398860059CA01 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B45CC210398CA0059CA01 /* RideOptionPickerUserInteractions.swift */,
+				281B45CE210399090059CA01 /* ReduxRideOptionPickerUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		281B45CB2103988C0059CA01 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				281B45D0210399700059CA01 /* RideOptionPickerViewControllerState.swift */,
+				9F47B1481FAD6CBF009B5587 /* RideOptionSegmentedControlState.swift */,
+				9F47B1491FAD6CBF009B5587 /* RideOptionSegmentState.swift */,
+				9F47B14A1FAD6CBF009B5587 /* RideOptionSegmentsFactory.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		281EA576242F83C200124773 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				281EA595242F83EA00124773 /* ReSwiftStorePublisher.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		28261F03211FAFFE003AA887 /* StatePersisters */ = {
+			isa = PBXGroup;
+			children = (
+				28261F2A211FB085003AA887 /* ReduxUserSessionStatePersister.swift */,
+				28261F28211FB045003AA887 /* UserSessionStatePersister.swift */,
+			);
+			path = StatePersisters;
+			sourceTree = "<group>";
+		};
+		28861D262103BD4700D80D72 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				28861D4F2103BDC600D80D72 /* ReduxWaitingForPickupUserInteractions.swift */,
+				28861D4B2103BD5D00D80D72 /* WaitingForPickupUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		28861D512103D83900D80D72 /* UserInteractions */ = {
+			isa = PBXGroup;
+			children = (
+				281B458D20FC22220059CA01 /* ProfileUserInteractions.swift */,
+				281B458F20FC22480059CA01 /* ReduxProfileUserInteractions.swift */,
+			);
+			path = UserInteractions;
+			sourceTree = "<group>";
+		};
+		28861D522103D8EA00D80D72 /* SwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				28861D532103D8FE00D80D72 /* OptionalExtensions.swift */,
+			);
+			path = SwiftExtensions;
+			sourceTree = "<group>";
+		};
+		28861D552103D99A00D80D72 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				28861D562103D9AE00D80D72 /* GettingUsersLocationActions.swift */,
+				28861D582103DA1D00D80D72 /* GettingUsersLocationReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		28861D5A2104E80700D80D72 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				28861D5B2104E81F00D80D72 /* ProfileViewControllerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		28861D652104F28700D80D72 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				28861D662104F2A300D80D72 /* ProfileActions.swift */,
+				28861D682104F2BA00D80D72 /* ProfileReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		28B10BF320BDECE400122AF2 /* Koober_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				28B10C1C20BDEEBF00122AF2 /* iOSApp */,
+				28B10BF420BDECE400122AF2 /* Koober_iOS.h */,
+				28B10BF520BDECE400122AF2 /* Info.plist */,
+			);
+			path = Koober_iOS;
+			sourceTree = "<group>";
+		};
+		28B10C1C20BDEEBF00122AF2 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				28B10C1D20BDEEC800122AF2 /* Onboarding */,
+				28B10C1E20BDEED000122AF2 /* SignedIn */,
+				9F47B1231FAD6CBF009B5587 /* KooberAppDepedencyContainer.swift */,
+				9F47B1521FAD6CC0009B5587 /* LaunchRootView.swift */,
+				9F47B1531FAD6CC0009B5587 /* LaunchViewController.swift */,
+				9F47B1541FAD6CC0009B5587 /* MainViewController.swift */,
+			);
+			path = iOSApp;
+			sourceTree = "<group>";
+		};
+		28B10C1D20BDEEC800122AF2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1571FAD6CC0009B5587 /* SignIn */,
+				9F47B15C1FAD6CC0009B5587 /* SignUp */,
+				9F47B15F1FAD6CC0009B5587 /* Welcome */,
+				9FC897861FAE55EE00B1A8B0 /* KooberOnboardingDependencyContainer.swift */,
+				9F47B1561FAD6CC0009B5587 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		28B10C1E20BDEED000122AF2 /* SignedIn */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA1811FE6DE6300864536 /* GettingUsersLocation */,
+				28B10C2520BDEF3B00122AF2 /* PickMeUp */,
+				9F47B1701FAD6CC0009B5587 /* ViewProfile */,
+				9F47B1731FAD6CC0009B5587 /* WaitingForPickup */,
+				28CAAFBA21528E4700B154ED /* KooberSignedInDependencyContainer.swift */,
+				9F47B16E1FAD6CC0009B5587 /* SignedInRootView.swift */,
+				9F47B16F1FAD6CC0009B5587 /* SignedInViewController.swift */,
+			);
+			path = SignedIn;
+			sourceTree = "<group>";
+		};
+		28B10C2520BDEF3B00122AF2 /* PickMeUp */ = {
+			isa = PBXGroup;
+			children = (
+				9FA1D5DF1FAFE74A00526A38 /* Map */,
+				9FA1D5DC1FAFE6D500526A38 /* SelectDropoffLocation */,
+				9FA1D5DD1FAFE6FF00526A38 /* SelectRideOption */,
+				9FA1D5DE1FAFE73100526A38 /* SendRideRequest */,
+				9FDDC96D1FF4870F00CF43B3 /* KooberPickMeUpDependencyContainer.swift */,
+				9F47B1681FAD6CC0009B5587 /* PickMeUpRootView.swift */,
+				9F47B1691FAD6CC0009B5587 /* PickMeUpViewController.swift */,
+			);
+			path = PickMeUp;
+			sourceTree = "<group>";
+		};
+		28B10C5520BDF6C300122AF2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				28B10C5620BDF6CA00122AF2 /* NiblessComponents */,
+				9F6EB19D1FD9CA050050811C /* ObservableUISearchController.swift */,
+				9F47B1341FAD6CBF009B5587 /* UIStackViewExtensions.swift */,
+				28861D632104EFCA00D80D72 /* UITableViewCellIdentifiers.swift */,
+				9F3F1FBE20DF441D00BE3BC7 /* UIViewController+ErrorPresentation.swift */,
+				9F47B1311FAD6CBF009B5587 /* ViewControllerContainment.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		28B10C5620BDF6CA00122AF2 /* NiblessComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9F98007320B4C59600BF2221 /* NiblessNavigationController.swift */,
+				28861D612104EEBE00D80D72 /* NiblessTableView.swift */,
+				9F47B12F1FAD6CBF009B5587 /* NiblessView.swift */,
+				9F47B1301FAD6CBF009B5587 /* NiblessViewController.swift */,
+			);
+			path = NiblessComponents;
+			sourceTree = "<group>";
+		};
+		28B10C5820BDF75F00122AF2 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B12B1FAD6CBF009B5587 /* Image Cache */,
+				9F47B14D1FAD6CC0009B5587 /* Style */,
+				28B10C5520BDF6C300122AF2 /* UIKit */,
+				28BD4F4E20544ECC007C7245 /* ErrorMessagePresentation.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		28B10C5A20BDF98800122AF2 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				281B457B20FC1D5C0059CA01 /* Features */,
+				281B457A20FC1D1B0059CA01 /* Redux */,
+				9FE690BE20B4EAA700F1E124 /* Reusable */,
+				281B457920FC1D110059CA01 /* State */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		28B10C5B20BDF98F00122AF2 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9FA1D5BE1FAF9A3400526A38 /* Model */,
+				28BD4F3920531ADA007C7245 /* Repositories */,
+				28261F03211FAFFE003AA887 /* StatePersisters */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		28BD4F3920531ADA007C7245 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA1681FE5C0B200864536 /* Coding */,
+				9F41F16A1FE77E5800C7EABF /* Location */,
+				9F96BDE2209E69B300F13F88 /* Persistence */,
+				9F47B0B11FAD6C7E009B5587 /* Remote */,
+				9F8799062055B741002BF861 /* KooberLocationRepository.swift */,
+				287665EB20864B8300564D47 /* KooberNewRideRepository.swift */,
+				9F3BA1132061904200A84852 /* KooberRideOptionRepository.swift */,
+				9F8799042055B6EA002BF861 /* LocationRepository.swift */,
+				287665E920864B1D00564D47 /* NewRideRepository.swift */,
+				9F12866F205F661B00384B2C /* RideOptionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9F3B97F820EFE01F001A3187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B980E20EFE01F001A3187 /* ReSwift.framework */,
+				9F3B981020EFE01F001A3187 /* ReSwift-iOSTests.xctest */,
+				9F3B981220EFE01F001A3187 /* ReSwift.framework */,
+				9F3B981420EFE01F001A3187 /* ReSwift-macOSTests.xctest */,
+				9F3B981620EFE01F001A3187 /* ReSwift.framework */,
+				9F3B981820EFE01F001A3187 /* ReSwift-tvOSTests.xctest */,
+				9F3B981A20EFE01F001A3187 /* ReSwift.framework */,
+				281EA58A242F83C200124773 /* SwiftLintIntegration.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F3B987320EFE3A2001A3187 /* ReSwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				281EA576242F83C200124773 /* Combine */,
+			);
+			path = ReSwiftExtensions;
+			sourceTree = "<group>";
+		};
+		9F403F072095170C008916F4 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				281B457220FBDD1B0059CA01 /* State */,
+				281B457320FBDD2D0059CA01 /* UserInteractions */,
+				281B457420FBDD340059CA01 /* Redux */,
+				281B457520FBE00B0059CA01 /* Features */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		9F403F0820951712008916F4 /* SignedIn */ = {
+			isa = PBXGroup;
+			children = (
+				281B458A20FC1E7C0059CA01 /* Features */,
+				281B459920FCE6180059CA01 /* Redux */,
+				281B458920FC1E4D0059CA01 /* State */,
+				281B45A420FE33790059CA01 /* UserInteractions */,
+			);
+			path = SignedIn;
+			sourceTree = "<group>";
+		};
+		9F403F0D209517F0008916F4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				281B458020FC1DE30059CA01 /* UserInteractions */,
+				281B457F20FC1DDB0059CA01 /* Redux */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		9F403F0E209517F4008916F4 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				281B458320FC1E060059CA01 /* State */,
+				281B458220FC1DFE0059CA01 /* UserInteractions */,
+				281B458120FC1DF90059CA01 /* Redux */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		9F403F0F209517FA008916F4 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				281B458620FC1E2D0059CA01 /* State */,
+				281B458520FC1E250059CA01 /* UserInteractions */,
+				281B458420FC1E210059CA01 /* Redux */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9F403F13209518F2008916F4 /* ViewProfile */ = {
+			isa = PBXGroup;
+			children = (
+				28861D652104F28700D80D72 /* Redux */,
+				28861D5A2104E80700D80D72 /* State */,
+				28861D512103D83900D80D72 /* UserInteractions */,
+			);
+			path = ViewProfile;
+			sourceTree = "<group>";
+		};
+		9F403F14209518FA008916F4 /* WaitingForPickup */ = {
+			isa = PBXGroup;
+			children = (
+				28861D262103BD4700D80D72 /* UserInteractions */,
+			);
+			path = WaitingForPickup;
+			sourceTree = "<group>";
+		};
+		9F403F152095190D008916F4 /* PickMeUp */ = {
+			isa = PBXGroup;
+			children = (
+				281B45A921024CEE0059CA01 /* Features */,
+				281B45B12102567B0059CA01 /* Redux */,
+				281B45AA21024CF50059CA01 /* State */,
+				281B45B0210256740059CA01 /* UserInteractions */,
+			);
+			path = PickMeUp;
+			sourceTree = "<group>";
+		};
+		9F403F162095191A008916F4 /* GettingUsersLocation */ = {
+			isa = PBXGroup;
+			children = (
+				281B459120FCCD480059CA01 /* State */,
+				281B459420FCCDE20059CA01 /* UserInteractions */,
+				28861D552103D99A00D80D72 /* Redux */,
+			);
+			path = GettingUsersLocation;
+			sourceTree = "<group>";
+		};
+		9F403F1A20951984008916F4 /* SelectRideOption */ = {
+			isa = PBXGroup;
+			children = (
+				281B45C92103987D0059CA01 /* Redux */,
+				281B45CB2103988C0059CA01 /* State */,
+				281B45CA210398860059CA01 /* UserInteractions */,
+			);
+			path = SelectRideOption;
+			sourceTree = "<group>";
+		};
+		9F403F1B20951990008916F4 /* SelectDropoffLocation */ = {
+			isa = PBXGroup;
+			children = (
+				281B45BC210272720059CA01 /* Redux */,
+				281B45BA210272670059CA01 /* State */,
+				281B45BB2102726C0059CA01 /* UserInteractions */,
+			);
+			path = SelectDropoffLocation;
+			sourceTree = "<group>";
+		};
+		9F403F1C20951998008916F4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				281B45AD21024D7E0059CA01 /* State */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9F41F16A1FE77E5800C7EABF /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				9F41F16B1FE77E9100C7EABF /* Locator.swift */,
+				9F41F16D1FE77ECB00C7EABF /* Implementations */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		9F41F16D1FE77ECB00C7EABF /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F41F16E1FE77EDC00C7EABF /* FakeLocator.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F47B08C1FAD6C7E009B5587 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE620F2964400F502CE /* ReSwiftDiagnostics */,
+				9F3B987320EFE3A2001A3187 /* ReSwiftExtensions */,
+				28861D522103D8EA00D80D72 /* SwiftExtensions */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9F47B0B11FAD6C7E009B5587 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B0BE1FAD6C7E009B5587 /* RemoteUserSession.swift */,
+				9F4CA1741FE5C6CF00864536 /* Auth */,
+				9F4CA1751FE5C70200864536 /* NewRide */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		9F47B12B1FAD6CBF009B5587 /* Image Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B12E1FAD6CBF009B5587 /* ImageCache.swift */,
+				9F47B12C1FAD6CBF009B5587 /* Implementations */,
+			);
+			path = "Image Cache";
+			sourceTree = "<group>";
+		};
+		9F47B12C1FAD6CBF009B5587 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B12D1FAD6CBF009B5587 /* ImageCacheKingfisher.swift */,
+				9F149F3E1FB898AE0016EA3C /* InBundleImageCache.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F47B1391FAD6CBF009B5587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B13F1FAD6CBF009B5587 /* MapAnnotation.swift */,
+				9F47B1411FAD6CBF009B5587 /* MapAnnotation+MapKit.swift */,
+				9F47B1421FAD6CBF009B5587 /* MapAnnotationDiff.swift */,
+				9F47B1401FAD6CBF009B5587 /* MapAnnotationType.swift */,
+				28861D6A2104FEB800D80D72 /* MapViewState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F47B1441FAD6CBF009B5587 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1451FAD6CBF009B5587 /* RideOptionButton.swift */,
+				9F47B1461FAD6CBF009B5587 /* RideOptionSegmentButtonImageLoader.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		9F47B14D1FAD6CC0009B5587 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B14E1FAD6CC0009B5587 /* Color.swift */,
+				9F47B14F1FAD6CC0009B5587 /* UIColor+Hex.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		9F47B1571FAD6CC0009B5587 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1581FAD6CC0009B5587 /* SignInRootView.swift */,
+				9F47B15B1FAD6CC0009B5587 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		9F47B15C1FAD6CC0009B5587 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B15D1FAD6CC0009B5587 /* SignUpRootView.swift */,
+				9F47B15E1FAD6CC0009B5587 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9F47B15F1FAD6CC0009B5587 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1601FAD6CC0009B5587 /* WelcomeRootView.swift */,
+				9F47B1611FAD6CC0009B5587 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		9F47B1701FAD6CC0009B5587 /* ViewProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1711FAD6CC0009B5587 /* ProfileContentRootView.swift */,
+				9F47B1721FAD6CC0009B5587 /* ProfileContentViewController.swift */,
+				28861D5F2104EDD900D80D72 /* ProfileTableView.swift */,
+				9F198F521FB69DC9008F51B6 /* ProfileViewController.swift */,
+			);
+			path = ViewProfile;
+			sourceTree = "<group>";
+		};
+		9F47B1731FAD6CC0009B5587 /* WaitingForPickup */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1741FAD6CC0009B5587 /* WaitingForPickupRootView.swift */,
+				9F47B1751FAD6CC0009B5587 /* WaitingForPickupViewController.swift */,
+			);
+			path = WaitingForPickup;
+			sourceTree = "<group>";
+		};
+		9F4CA1681FE5C0B200864536 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA1691FE5C0BF00864536 /* UserSession */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		9F4CA1691FE5C0BF00864536 /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA16A1FE5C0CF00864536 /* UserSessionCoding.swift */,
+				9F4CA16C1FE5C0E900864536 /* Implementations */,
+			);
+			path = UserSession;
+			sourceTree = "<group>";
+		};
+		9F4CA16C1FE5C0E900864536 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA16D1FE5C10700864536 /* UserSessionPropertyListCoder.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F4CA1741FE5C6CF00864536 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B0B31FAD6C7E009B5587 /* AuthRemoteAPI.swift */,
+				9F4CA1761FE5C71000864536 /* Implementations */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9F4CA1751FE5C70200864536 /* NewRide */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B0B21FAD6C7E009B5587 /* NewRideRemoteAPI.swift */,
+				9F4CA1771FE5C73E00864536 /* Implementations */,
+			);
+			path = NewRide;
+			sourceTree = "<group>";
+		};
+		9F4CA1761FE5C71000864536 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B0BD1FAD6C7E009B5587 /* KooberCloudAuthRemoteAPI.swift */,
+				9F47B0BC1FAD6C7E009B5587 /* FakeAuthRemoteAPI.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F4CA1771FE5C73E00864536 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B0BB1FAD6C7E009B5587 /* KooberCloudNewRideRemoteAPI.swift */,
+				9F149F401FB9ED800016EA3C /* FakeNewRideRemoteAPI.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F4CA1811FE6DE6300864536 /* GettingUsersLocation */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA1821FE6DE8F00864536 /* GettingUsersLocationViewController.swift */,
+				9F4CA1841FE6DF2200864536 /* GettingUsersLocationRootView.swift */,
+			);
+			path = GettingUsersLocation;
+			sourceTree = "<group>";
+		};
+		9F550EDA20F28DE000F502CE /* Launching */ = {
+			isa = PBXGroup;
+			children = (
+				281B457E20FC1D8E0059CA01 /* Redux */,
+				281B457C20FC1D810059CA01 /* State */,
+				281B457D20FC1D860059CA01 /* UserInteractions */,
+			);
+			path = Launching;
+			sourceTree = "<group>";
+		};
+		9F550EDB20F28DE600F502CE /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				281B457820FC1CD30059CA01 /* Features */,
+				281B457720FC1CCC0059CA01 /* Redux */,
+				281B457620FC1CC30059CA01 /* State */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		9F550EE620F2964400F502CE /* ReSwiftDiagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE720F2965B00F502CE /* ActionPrinterMiddleware.swift */,
+			);
+			path = ReSwiftDiagnostics;
+			sourceTree = "<group>";
+		};
+		9F707D9420B098130042AD5C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */,
+				9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */,
+				9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9F8A899D1FAD64D50096B294 = {
+			isa = PBXGroup;
+			children = (
+				9F8A89E41FAD67F60096B294 /* Cartfile */,
+				9F8A89A81FAD64D50096B294 /* Koober */,
+				28B10BF320BDECE400122AF2 /* Koober_iOS */,
+				9F8A89C71FAD67360096B294 /* KooberUIKit */,
+				9F8A89D91FAD67480096B294 /* KooberKit */,
+				9F707D9420B098130042AD5C /* Libraries */,
+				9F8A89A71FAD64D50096B294 /* Products */,
+				9F8A8A181FAD68290096B294 /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		9F8A89A71FAD64D50096B294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F8A89A61FAD64D50096B294 /* Koober.app */,
+				9F8A89C61FAD67360096B294 /* KooberUIKit.framework */,
+				9F8A89D81FAD67480096B294 /* KooberKit.framework */,
+				28B10BF220BDECE300122AF2 /* Koober_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F8A89A81FAD64D50096B294 /* Koober */ = {
+			isa = PBXGroup;
+			children = (
+				9F8A89BD1FAD66BA0096B294 /* AppDelegate.swift */,
+				9F8A89BC1FAD66BA0096B294 /* RWDevConLaunchScreen.xib */,
+				9F8A89B01FAD64D50096B294 /* Assets.xcassets */,
+				9F8A89B51FAD64D50096B294 /* Info.plist */,
+			);
+			path = Koober;
+			sourceTree = "<group>";
+		};
+		9F8A89C71FAD67360096B294 /* KooberUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				28B10C5820BDF75F00122AF2 /* Reusable */,
+				9F8A89C81FAD67360096B294 /* KooberUIKit.h */,
+				9F8A89C91FAD67360096B294 /* Info.plist */,
+			);
+			path = KooberUIKit;
+			sourceTree = "<group>";
+		};
+		9F8A89D91FAD67480096B294 /* KooberKit */ = {
+			isa = PBXGroup;
+			children = (
+				28B10C5B20BDF98F00122AF2 /* DataLayer */,
+				9F47B08C1FAD6C7E009B5587 /* Reusable */,
+				28B10C5A20BDF98800122AF2 /* UILayer */,
+				9F8A89DB1FAD67480096B294 /* Info.plist */,
+				9F8A89DA1FAD67480096B294 /* KooberKit.h */,
+			);
+			path = KooberKit;
+			sourceTree = "<group>";
+		};
+		9F8A8A181FAD68290096B294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F94206E208A4115002ACDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F942077208A4115002ACDC7 /* PromiseKit.framework */,
+				9F942079208A4115002ACDC7 /* PMKA+Tests.xctest */,
+				9F94207B208A4115002ACDC7 /* PMKBridgeTests.xctest */,
+				9F94207D208A4115002ACDC7 /* PMKCoreTests.xctest */,
+				9F94207F208A4115002ACDC7 /* PMKDeprecatedTests.xctest */,
+				9F942081208A4115002ACDC7 /* PMKJSA+Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F9420C7208A4169002ACDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F9420D1208A4169002ACDC7 /* Kingfisher.framework */,
+				9F9420D3208A4169002ACDC7 /* Kingfisher.framework */,
+				9F9420D5208A4169002ACDC7 /* Kingfisher.framework */,
+				9F9420D7208A4169002ACDC7 /* Kingfisher.framework */,
+				9F9420D9208A4169002ACDC7 /* KingfisherTests.xctest */,
+				9F9420DB208A4169002ACDC7 /* KingfisherTests-tvOS.xctest */,
+				9F9420DD208A4169002ACDC7 /* KingfisherTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F96BDE2209E69B300F13F88 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDEC209E69B300F13F88 /* RideOptionStore */,
+				9F96BDE3209E69B300F13F88 /* UserSessionStore */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		9F96BDE3209E69B300F13F88 /* UserSessionStore */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDE4209E69B300F13F88 /* UserSessionDataStore.swift */,
+				9F96BDE5209E69B300F13F88 /* Implementations */,
+			);
+			path = UserSessionStore;
+			sourceTree = "<group>";
+		};
+		9F96BDE5209E69B300F13F88 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDE6209E69B300F13F88 /* FakeUserSessionDataStore.swift */,
+				281B456F20FBD76C0059CA01 /* InMemoryUserSessionDataStore.swift */,
+				9F96BDEB209E69B300F13F88 /* FileUserSessionDataStore.swift */,
+				9F96BDE7209E69B300F13F88 /* Keychain */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9F96BDE7209E69B300F13F88 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDE8209E69B300F13F88 /* KeychainItem.swift */,
+				9F96BDE9209E69B300F13F88 /* Keychain.swift */,
+				9F96BDEA209E69B300F13F88 /* KeychainUserSessionDataStore.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		9F96BDEC209E69B300F13F88 /* RideOptionStore */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDED209E69B300F13F88 /* RideOptionDataStore.swift */,
+				9F96BDEE209E69B300F13F88 /* Implementations */,
+			);
+			path = RideOptionStore;
+			sourceTree = "<group>";
+		};
+		9F96BDEE209E69B300F13F88 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDEF209E69B300F13F88 /* RideOptionDataStoreInMemory.swift */,
+				9F96BDF0209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9FA1D5BE1FAF9A3400526A38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F96BDE0209E685500F13F88 /* RideOptionPickerRideOptions.swift */,
+				9F47B0CB1FAD6C7E009B5587 /* RideOption.swift */,
+				9F4CA1781FE6BF9700864536 /* NewRideRequest.swift */,
+				9F47B0CE1FAD6C7E009B5587 /* Location.swift */,
+				9F198F4C1FB6907F008F51B6 /* NamedLocation.swift */,
+				9F47B0CF1FAD6C7E009B5587 /* LoadedState.swift */,
+				9F47B0D01FAD6C7E009B5587 /* RemoteImage.swift */,
+				9FBB2EA41FAE450E0086363B /* Identifiable.swift */,
+				9F47B0D21FAD6C7E009B5587 /* UserProfile.swift */,
+				9F47B0D31FAD6C7E009B5587 /* UserSession.swift */,
+				9F198F4E1FB69936008F51B6 /* FakeURL.swift */,
+				9F41F17C1FE7FE0500C7EABF /* NewAccount.swift */,
+				28BD4F4A205444BC007C7245 /* Secret.swift */,
+				9F41F17E1FE80AB900C7EABF /* ErrorMessage.swift */,
+				9F3F1F6620DC409400BE3BC7 /* ErrorPresentation.swift */,
+				9F47B08D1FAD6C7E009B5587 /* KooberKitError.swift */,
+				9F550EC920F19C4500F502CE /* KooberKitActionDispatcher.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FA1D5DC1FAFE6D500526A38 /* SelectDropoffLocation */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1641FAD6CC0009B5587 /* DropoffLocationPickerContentRootView.swift */,
+				9F47B1651FAD6CC0009B5587 /* DropoffLocationPickerContentViewController.swift */,
+				9F198F541FB6AB1C008F51B6 /* DropoffLocationPickerViewController.swift */,
+			);
+			path = SelectDropoffLocation;
+			sourceTree = "<group>";
+		};
+		9FA1D5DD1FAFE6FF00526A38 /* SelectRideOption */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1441FAD6CBF009B5587 /* Button */,
+				9F47B16A1FAD6CC0009B5587 /* RideOptionPickerViewController.swift */,
+				9F47B16B1FAD6CC0009B5587 /* RideOptionSegmentedControl.swift */,
+			);
+			path = SelectRideOption;
+			sourceTree = "<group>";
+		};
+		9FA1D5DE1FAFE73100526A38 /* SendRideRequest */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B16C1FAD6CC0009B5587 /* SendingRideRequestRootView.swift */,
+				9F47B16D1FAD6CC0009B5587 /* SendingRideRequestViewController.swift */,
+			);
+			path = SendRideRequest;
+			sourceTree = "<group>";
+		};
+		9FA1D5DF1FAFE74A00526A38 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9F47B1391FAD6CBF009B5587 /* Model */,
+				9F47B1381FAD6CBF009B5587 /* MapAnnotationView.swift */,
+				9F47B1661FAD6CC0009B5587 /* PickMeUpMapRootView.swift */,
+				9F47B1671FAD6CC0009B5587 /* PickMeUpMapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9FE690BE20B4EAA700F1E124 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9F550EE220F290B600F502CE /* AuthenticationState.swift */,
+				9F550ED220F284BC00F502CE /* Reducers.swift */,
+				9F550EF420F2A73800F502CE /* ScopedState.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28B10BEF20BDECE300122AF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B10BF620BDECE400122AF2 /* Koober_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89C31FAD67360096B294 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8A89CA1FAD67360096B294 /* KooberUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89D51FAD67480096B294 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8A89DC1FAD67480096B294 /* KooberKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28B10BF120BDECE300122AF2 /* Koober_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B10C1B20BDECE400122AF2 /* Build configuration list for PBXNativeTarget "Koober_iOS" */;
+			buildPhases = (
+				28B10BED20BDECE300122AF2 /* Sources */,
+				28B10BEE20BDECE300122AF2 /* Frameworks */,
+				28B10BEF20BDECE300122AF2 /* Headers */,
+				28B10BF020BDECE300122AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Koober_iOS;
+			productName = "Koober-iOS";
+			productReference = 28B10BF220BDECE300122AF2 /* Koober_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F8A89A51FAD64D50096B294 /* Koober */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8A89B81FAD64D50096B294 /* Build configuration list for PBXNativeTarget "Koober" */;
+			buildPhases = (
+				9F8A89A21FAD64D50096B294 /* Sources */,
+				9F8A89A31FAD64D50096B294 /* Frameworks */,
+				9F8A89A41FAD64D50096B294 /* Resources */,
+				9F8A89D21FAD67360096B294 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F8A89CC1FAD67360096B294 /* PBXTargetDependency */,
+				9F8A89DE1FAD67480096B294 /* PBXTargetDependency */,
+				9F9420E5208A4294002ACDC7 /* PBXTargetDependency */,
+				9F9420F1208A42BE002ACDC7 /* PBXTargetDependency */,
+				28B10BF820BDECE400122AF2 /* PBXTargetDependency */,
+				2897C72220F7ABFA00D91654 /* PBXTargetDependency */,
+			);
+			name = Koober;
+			productName = Koober;
+			productReference = 9F8A89A61FAD64D50096B294 /* Koober.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F8A89C51FAD67360096B294 /* KooberUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8A89CF1FAD67360096B294 /* Build configuration list for PBXNativeTarget "KooberUIKit" */;
+			buildPhases = (
+				9F8A89C11FAD67360096B294 /* Sources */,
+				9F8A89C21FAD67360096B294 /* Frameworks */,
+				9F8A89C31FAD67360096B294 /* Headers */,
+				9F8A89C41FAD67360096B294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KooberUIKit;
+			productName = KooberUIKit;
+			productReference = 9F8A89C61FAD67360096B294 /* KooberUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F8A89D71FAD67480096B294 /* KooberKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8A89E11FAD67480096B294 /* Build configuration list for PBXNativeTarget "KooberKit" */;
+			buildPhases = (
+				9F8A89D31FAD67480096B294 /* Sources */,
+				9F8A89D41FAD67480096B294 /* Frameworks */,
+				9F8A89D51FAD67480096B294 /* Headers */,
+				9F8A89D61FAD67480096B294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KooberKit;
+			productName = KooberKit;
+			productReference = 9F8A89D81FAD67480096B294 /* KooberKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F8A899E1FAD64D50096B294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					28B10BF120BDECE300122AF2 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					9F8A89A51FAD64D50096B294 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Manual;
+					};
+					9F8A89C51FAD67360096B294 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					9F8A89D71FAD67480096B294 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F8A89A11FAD64D50096B294 /* Build configuration list for PBXProject "KooberApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F8A899D1FAD64D50096B294;
+			productRefGroup = 9F8A89A71FAD64D50096B294 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9F9420C7208A4169002ACDC7 /* Products */;
+					ProjectRef = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F94206E208A4115002ACDC7 /* Products */;
+					ProjectRef = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 9F3B97F820EFE01F001A3187 /* Products */;
+					ProjectRef = 9F3B97F720EFE01F001A3187 /* ReSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9F8A89A51FAD64D50096B294 /* Koober */,
+				28B10BF120BDECE300122AF2 /* Koober_iOS */,
+				9F8A89C51FAD67360096B294 /* KooberUIKit */,
+				9F8A89D71FAD67480096B294 /* KooberKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		281EA58A242F83C200124773 /* SwiftLintIntegration.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftLintIntegration.xctest;
+			remoteRef = 281EA589242F83C200124773 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B980E20EFE01F001A3187 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 9F3B980D20EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981020EFE01F001A3187 /* ReSwift-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-iOSTests.xctest";
+			remoteRef = 9F3B980F20EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981220EFE01F001A3187 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 9F3B981120EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981420EFE01F001A3187 /* ReSwift-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-macOSTests.xctest";
+			remoteRef = 9F3B981320EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981620EFE01F001A3187 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 9F3B981520EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981820EFE01F001A3187 /* ReSwift-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReSwift-tvOSTests.xctest";
+			remoteRef = 9F3B981720EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F3B981A20EFE01F001A3187 /* ReSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReSwift.framework;
+			remoteRef = 9F3B981920EFE01F001A3187 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F942077208A4115002ACDC7 /* PromiseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PromiseKit.framework;
+			remoteRef = 9F942076208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F942079208A4115002ACDC7 /* PMKA+Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "PMKA+Tests.xctest";
+			remoteRef = 9F942078208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F94207B208A4115002ACDC7 /* PMKBridgeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKBridgeTests.xctest;
+			remoteRef = 9F94207A208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F94207D208A4115002ACDC7 /* PMKCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKCoreTests.xctest;
+			remoteRef = 9F94207C208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F94207F208A4115002ACDC7 /* PMKDeprecatedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKDeprecatedTests.xctest;
+			remoteRef = 9F94207E208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F942081208A4115002ACDC7 /* PMKJSA+Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "PMKJSA+Tests.xctest";
+			remoteRef = 9F942080208A4115002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420D1208A4169002ACDC7 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 9F9420D0208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420D3208A4169002ACDC7 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 9F9420D2208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420D5208A4169002ACDC7 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 9F9420D4208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420D7208A4169002ACDC7 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 9F9420D6208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420D9208A4169002ACDC7 /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = 9F9420D8208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420DB208A4169002ACDC7 /* KingfisherTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-tvOS.xctest";
+			remoteRef = 9F9420DA208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F9420DD208A4169002ACDC7 /* KingfisherTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-macOS.xctest";
+			remoteRef = 9F9420DC208A4169002ACDC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28B10BF020BDECE300122AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89A41FAD64D50096B294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8A89BF1FAD66BA0096B294 /* RWDevConLaunchScreen.xib in Resources */,
+				9F8A89B11FAD64D50096B294 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89C41FAD67360096B294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA1D5E91FB1739300526A38 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89D61FAD67480096B294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28B10BED20BDECE300122AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B10C4220BDF0BB00122AF2 /* MapAnnotationView.swift in Sources */,
+				28B10C3820BDF09E00122AF2 /* SignInRootView.swift in Sources */,
+				28B10C4720BDF0BF00122AF2 /* MapAnnotationDiff.swift in Sources */,
+				28B10C3A20BDF0A800122AF2 /* GettingUsersLocationRootView.swift in Sources */,
+				28B10C5020BDF0D300122AF2 /* SendingRideRequestRootView.swift in Sources */,
+				28B10C3720BDF09E00122AF2 /* SignInViewController.swift in Sources */,
+				28B10C4520BDF0BF00122AF2 /* MapAnnotationType.swift in Sources */,
+				28B10C2B20BDEFC600122AF2 /* LaunchViewController.swift in Sources */,
+				28B10C4E20BDF0CE00122AF2 /* RideOptionSegmentButtonImageLoader.swift in Sources */,
+				28B10C4A20BDF0C500122AF2 /* DropoffLocationPickerContentRootView.swift in Sources */,
+				28B10C4F20BDF0D300122AF2 /* SendingRideRequestViewController.swift in Sources */,
+				28B10C3B20BDF0AC00122AF2 /* WaitingForPickupViewController.swift in Sources */,
+				28B10C2F20BDEFED00122AF2 /* SignedInRootView.swift in Sources */,
+				28B10C3120BDF00B00122AF2 /* PickMeUpViewController.swift in Sources */,
+				28B10C4020BDF0BB00122AF2 /* PickMeUpMapViewController.swift in Sources */,
+				28B10C2020BDEEE800122AF2 /* KooberAppDepedencyContainer.swift in Sources */,
+				28B10C2620BDEF4C00122AF2 /* KooberPickMeUpDependencyContainer.swift in Sources */,
+				28B10C4420BDF0BF00122AF2 /* MapAnnotation.swift in Sources */,
+				28B10C3320BDF08F00122AF2 /* WelcomeViewController.swift in Sources */,
+				28B10C4120BDF0BB00122AF2 /* PickMeUpMapRootView.swift in Sources */,
+				28B10C3420BDF09500122AF2 /* WelcomeRootView.swift in Sources */,
+				28B10C3E20BDF0B100122AF2 /* ProfileContentViewController.swift in Sources */,
+				28B10C2220BDEF2400122AF2 /* KooberOnboardingDependencyContainer.swift in Sources */,
+				28B10C4C20BDF0C900122AF2 /* RideOptionSegmentedControl.swift in Sources */,
+				28B10C3020BDF00B00122AF2 /* PickMeUpRootView.swift in Sources */,
+				28B10C3F20BDF0B100122AF2 /* ProfileContentRootView.swift in Sources */,
+				28B10C3920BDF0A800122AF2 /* GettingUsersLocationViewController.swift in Sources */,
+				28B10C3D20BDF0B100122AF2 /* ProfileViewController.swift in Sources */,
+				28B10C2D20BDEFD000122AF2 /* OnboardingViewController.swift in Sources */,
+				28B10C3520BDF09A00122AF2 /* SignUpViewController.swift in Sources */,
+				28B10C2C20BDEFC600122AF2 /* LaunchRootView.swift in Sources */,
+				28CAAFBB21528E4700B154ED /* KooberSignedInDependencyContainer.swift in Sources */,
+				28B10C3620BDF09A00122AF2 /* SignUpRootView.swift in Sources */,
+				28861D602104EDD900D80D72 /* ProfileTableView.swift in Sources */,
+				28B10C2E20BDEFED00122AF2 /* SignedInViewController.swift in Sources */,
+				28861D6B2104FEB800D80D72 /* MapViewState.swift in Sources */,
+				28B10C3C20BDF0AC00122AF2 /* WaitingForPickupRootView.swift in Sources */,
+				28B10C4620BDF0BF00122AF2 /* MapAnnotation+MapKit.swift in Sources */,
+				28B10C2A20BDEFB600122AF2 /* MainViewController.swift in Sources */,
+				28B10C4920BDF0C500122AF2 /* DropoffLocationPickerContentViewController.swift in Sources */,
+				28B10C4B20BDF0C900122AF2 /* RideOptionPickerViewController.swift in Sources */,
+				28B10C4D20BDF0CE00122AF2 /* RideOptionButton.swift in Sources */,
+				28B10C4820BDF0C500122AF2 /* DropoffLocationPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89A21FAD64D50096B294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8A89C01FAD66BA0096B294 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89C11FAD67360096B294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F47B1811FAD6CC0009B5587 /* ViewControllerContainment.swift in Sources */,
+				9F47B1801FAD6CC0009B5587 /* NiblessViewController.swift in Sources */,
+				28861D642104EFCA00D80D72 /* UITableViewCellIdentifiers.swift in Sources */,
+				9F3F1FBF20DF441D00BE3BC7 /* UIViewController+ErrorPresentation.swift in Sources */,
+				9F47B1841FAD6CC0009B5587 /* UIStackViewExtensions.swift in Sources */,
+				9F47B1951FAD6CC0009B5587 /* Color.swift in Sources */,
+				9F47B17D1FAD6CC0009B5587 /* ImageCacheKingfisher.swift in Sources */,
+				28861D622104EEBE00D80D72 /* NiblessTableView.swift in Sources */,
+				9F47B17F1FAD6CC0009B5587 /* NiblessView.swift in Sources */,
+				28BD4F4F20544ECC007C7245 /* ErrorMessagePresentation.swift in Sources */,
+				9F98007420B4C59600BF2221 /* NiblessNavigationController.swift in Sources */,
+				9F47B1961FAD6CC0009B5587 /* UIColor+Hex.swift in Sources */,
+				9F47B17E1FAD6CC0009B5587 /* ImageCache.swift in Sources */,
+				9F6EB19E1FD9CA050050811C /* ObservableUISearchController.swift in Sources */,
+				9F149F3F1FB898AE0016EA3C /* InBundleImageCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8A89D31FAD67480096B294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281B457020FBD76C0059CA01 /* InMemoryUserSessionDataStore.swift in Sources */,
+				9F8D156120F7F56100AC5CDF /* LaunchViewControllerState.swift in Sources */,
+				9F550F1020F3A70F00F502CE /* OnboardingUserInteractions.swift in Sources */,
+				2897C72620F7ACEB00D91654 /* OnboardingGetters.swift in Sources */,
+				9F8D158F20FA4A9800AC5CDF /* ReduxSignUpUserInteractions.swift in Sources */,
+				9F4CA16B1FE5C0CF00864536 /* UserSessionCoding.swift in Sources */,
+				9F550F0620F2E75800F502CE /* OnboardingLogic.swift in Sources */,
+				2897C72820F7B94800D91654 /* AppRunningGetters.swift in Sources */,
+				281B459F20FE26350059CA01 /* SignedInViewControllerState.swift in Sources */,
+				281B45D321039E780059CA01 /* RideOptionPickerActions.swift in Sources */,
+				9F550F0420F2E70000F502CE /* OnboardingReducer.swift in Sources */,
+				281B459620FCCDF70059CA01 /* GettingUsersLocationUserInteractions.swift in Sources */,
+				281B45CD210398CA0059CA01 /* RideOptionPickerUserInteractions.swift in Sources */,
+				9F550F0220F2E6B400F502CE /* OnboardingActions.swift in Sources */,
+				9F8D159320FA656000AC5CDF /* SignUpReducer.swift in Sources */,
+				9F198F4D1FB6907F008F51B6 /* NamedLocation.swift in Sources */,
+				9F550F1220F3A75D00F502CE /* ReduxOnboardingUserInteractions.swift in Sources */,
+				281B45A320FE303B0059CA01 /* SignedInGetters.swift in Sources */,
+				281B459820FCCE340059CA01 /* ReduxGettingUsersLocationUserInteractions.swift in Sources */,
+				287665EC20864B8300564D47 /* KooberNewRideRepository.swift in Sources */,
+				9F8799072055B741002BF861 /* KooberLocationRepository.swift in Sources */,
+				9F47B0FA1FAD6C7F009B5587 /* KooberCloudAuthRemoteAPI.swift in Sources */,
+				281B45B5210256B20059CA01 /* ReduxPickMeUpUserInteractions.swift in Sources */,
+				9F47B10A1FAD6C7F009B5587 /* LoadedState.swift in Sources */,
+				9F550ED920F28C6200F502CE /* NewRideState.swift in Sources */,
+				281B45C0210272B00059CA01 /* DropoffLocationPickerUserInteractions.swift in Sources */,
+				9F4CA1791FE6BF9700864536 /* NewRideRequest.swift in Sources */,
+				9F41F16F1FE77EDC00C7EABF /* FakeLocator.swift in Sources */,
+				287665EA20864B1D00564D47 /* NewRideRepository.swift in Sources */,
+				281B45D1210399700059CA01 /* RideOptionPickerViewControllerState.swift in Sources */,
+				281B459D20FCE6970059CA01 /* NewRideReducer.swift in Sources */,
+				9F550EC220F15F9500F502CE /* SignInActions.swift in Sources */,
+				9F47B10D1FAD6C7F009B5587 /* UserProfile.swift in Sources */,
+				281B45C2210272F30059CA01 /* ReduxDropoffLocationPickerUserInteractions.swift in Sources */,
+				281B459320FCCD5D0059CA01 /* GettingUsersLocationViewControllerState.swift in Sources */,
+				9FBB2EA51FAE450E0086363B /* Identifiable.swift in Sources */,
+				9F47B1091FAD6C7F009B5587 /* Location.swift in Sources */,
+				281EA596242F83EA00124773 /* ReSwiftStorePublisher.swift in Sources */,
+				28B10C6D20BE02A600122AF2 /* PickMeUpState.swift in Sources */,
+				9F41F17F1FE80AB900C7EABF /* ErrorMessage.swift in Sources */,
+				9F403F2920951C35008916F4 /* RideOptionSegmentsFactory.swift in Sources */,
+				28261F2B211FB085003AA887 /* ReduxUserSessionStatePersister.swift in Sources */,
+				9F550EC820F19B9100F502CE /* ReduxSignInUserInteractions.swift in Sources */,
+				9F47B10B1FAD6C7F009B5587 /* RemoteImage.swift in Sources */,
+				281B45AC21024D0E0059CA01 /* PickMeUpViewControllerState.swift in Sources */,
+				9F96BDF7209E69B300F13F88 /* RideOptionDataStore.swift in Sources */,
+				28261F29211FB045003AA887 /* UserSessionStatePersister.swift in Sources */,
+				9F47B1061FAD6C7F009B5587 /* RideOption.swift in Sources */,
+				28861D4C2103BD5D00D80D72 /* WaitingForPickupUserInteractions.swift in Sources */,
+				281B45CF210399090059CA01 /* ReduxRideOptionPickerUserInteractions.swift in Sources */,
+				281B45B3210256900059CA01 /* PickMeUpUserInteractions.swift in Sources */,
+				9F47B0FB1FAD6C7F009B5587 /* RemoteUserSession.swift in Sources */,
+				9F550EF520F2A73800F502CE /* ScopedState.swift in Sources */,
+				9F96BDF9209E69B300F13F88 /* RideOptionDataStoreDiskUserPrefs.swift in Sources */,
+				9F47B0F31FAD6C7F009B5587 /* AuthRemoteAPI.swift in Sources */,
+				9F96BDF6209E69B300F13F88 /* FileUserSessionDataStore.swift in Sources */,
+				9F47B0F81FAD6C7F009B5587 /* KooberCloudNewRideRemoteAPI.swift in Sources */,
+				9F550F0C20F2EBE100F502CE /* AppRunningReducer.swift in Sources */,
+				281B458C20FC20730059CA01 /* AppRunningActions.swift in Sources */,
+				9F198F4F1FB69936008F51B6 /* FakeURL.swift in Sources */,
+				9F47B0D41FAD6C7F009B5587 /* KooberKitError.swift in Sources */,
+				281B45AF21024DB80059CA01 /* MapViewControllerState.swift in Sources */,
+				9F96BDE1209E685600F13F88 /* RideOptionPickerRideOptions.swift in Sources */,
+				281B45A620FE338E0059CA01 /* SignedInUserInteractions.swift in Sources */,
+				9F96BDF4209E69B300F13F88 /* Keychain.swift in Sources */,
+				9F550EEA20F29F4300F502CE /* OnboardingState.swift in Sources */,
+				9F41F16C1FE77E9100C7EABF /* Locator.swift in Sources */,
+				28861D572103D9AE00D80D72 /* GettingUsersLocationActions.swift in Sources */,
+				9F550EBC20F017BC00F502CE /* SignInViewControllerState.swift in Sources */,
+				9F41F17D1FE7FE0500C7EABF /* NewAccount.swift in Sources */,
+				9F96BDF3209E69B300F13F88 /* KeychainItem.swift in Sources */,
+				9F47B10E1FAD6C7F009B5587 /* UserSession.swift in Sources */,
+				9F8D158D20FA4A6300AC5CDF /* SignUpUserInteractions.swift in Sources */,
+				281B45C8210286850059CA01 /* DropoffLocationPickerReducer.swift in Sources */,
+				9F550ECA20F19C4500F502CE /* KooberKitActionDispatcher.swift in Sources */,
+				281B45B7210256EB0059CA01 /* PickMeUpActions.swift in Sources */,
+				9F550F0A20F2E8AE00F502CE /* ReduxWelcomeUserInteractions.swift in Sources */,
+				281B45BE210272970059CA01 /* DropoffLocationPickerViewControllerState.swift in Sources */,
+				9F403F2220951A69008916F4 /* RideOptionSegmentedControlState.swift in Sources */,
+				281B454A20FBD5B10059CA01 /* MainViewControllerState.swift in Sources */,
+				9F550ED320F284BC00F502CE /* Reducers.swift in Sources */,
+				9F96BDF8209E69B300F13F88 /* RideOptionDataStoreInMemory.swift in Sources */,
+				28BD4F4B205444BC007C7245 /* Secret.swift in Sources */,
+				281B45A120FE2C440059CA01 /* SignedInReducer.swift in Sources */,
+				28861D502103BDC600D80D72 /* ReduxWaitingForPickupUserInteractions.swift in Sources */,
+				28861D672104F2A300D80D72 /* ProfileActions.swift in Sources */,
+				9F3F1F6720DC409400BE3BC7 /* ErrorPresentation.swift in Sources */,
+				281B459B20FCE62A0059CA01 /* SignedInActions.swift in Sources */,
+				9F550ED720F28BDC00F502CE /* AppRunningState.swift in Sources */,
+				9F8799052055B6EA002BF861 /* LocationRepository.swift in Sources */,
+				9F47B0F21FAD6C7F009B5587 /* NewRideRemoteAPI.swift in Sources */,
+				9F3BA1142061904200A84852 /* KooberRideOptionRepository.swift in Sources */,
+				9F550EC020F01D6200F502CE /* SignInLogic.swift in Sources */,
+				9F149F411FB9ED800016EA3C /* FakeNewRideRemoteAPI.swift in Sources */,
+				9F47B0F91FAD6C7F009B5587 /* FakeAuthRemoteAPI.swift in Sources */,
+				9F8D159120FA4AD000AC5CDF /* SignUpActions.swift in Sources */,
+				28B10C6F20BE02B300122AF2 /* PickMeUpRequestProgress.swift in Sources */,
+				281B458E20FC22220059CA01 /* ProfileUserInteractions.swift in Sources */,
+				281B45A820FE33CF0059CA01 /* ReduxSignedInUserInteractions.swift in Sources */,
+				9F128670205F661B00384B2C /* RideOptionRepository.swift in Sources */,
+				281B45D52103A0080059CA01 /* RideOptionPickerReducer.swift in Sources */,
+				28861D5C2104E81F00D80D72 /* ProfileViewControllerState.swift in Sources */,
+				9F550EBE20F0193A00F502CE /* SignInUserInteractions.swift in Sources */,
+				281B459020FC22480059CA01 /* ReduxProfileUserInteractions.swift in Sources */,
+				281B45B92102571B0059CA01 /* PickMeUpReducer.swift in Sources */,
+				9F550EE120F2903A00F502CE /* LaunchingActions.swift in Sources */,
+				9F8D158B20FA4A2E00AC5CDF /* SignUpViewControllerState.swift in Sources */,
+				9F550F0020F2E05200F502CE /* EntryPointGetters.swift in Sources */,
+				28861D592103DA1D00D80D72 /* GettingUsersLocationReducer.swift in Sources */,
+				9F550EDD20F28E1000F502CE /* LaunchingUserInteractions.swift in Sources */,
+				9F550EE820F2965B00F502CE /* ActionPrinterMiddleware.swift in Sources */,
+				9F96BDF2209E69B300F13F88 /* FakeUserSessionDataStore.swift in Sources */,
+				28861D542103D8FE00D80D72 /* OptionalExtensions.swift in Sources */,
+				281B45C621027E1A0059CA01 /* PickMeUpGetters.swift in Sources */,
+				9F550EE520F2938600F502CE /* AppLogic.swift in Sources */,
+				28861D692104F2BA00D80D72 /* ProfileReducer.swift in Sources */,
+				9F403F2520951AA1008916F4 /* RideOptionSegmentState.swift in Sources */,
+				9F550F0820F2E87700F502CE /* WelcomeUserInteractions.swift in Sources */,
+				9F8D158820F8461900AC5CDF /* LaunchingReducer.swift in Sources */,
+				9F550ED120F2848D00F502CE /* AppReducer.swift in Sources */,
+				9F550ECC20F283FB00F502CE /* AppState.swift in Sources */,
+				9F4CA16E1FE5C10700864536 /* UserSessionPropertyListCoder.swift in Sources */,
+				281B45C42102732E0059CA01 /* DropoffLocationPickerActions.swift in Sources */,
+				9F550F0E20F3A42100F502CE /* WelcomeActions.swift in Sources */,
+				9F550EE320F290B600F502CE /* AuthenticationState.swift in Sources */,
+				9F96BDF1209E69B300F13F88 /* UserSessionDataStore.swift in Sources */,
+				9F550EDF20F28E3A00F502CE /* ReduxLaunchingUserInteractions.swift in Sources */,
+				9F550EC420F1991D00F502CE /* SignInReducer.swift in Sources */,
+				9F96BDF5209E69B300F13F88 /* KeychainUserSessionDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2897C72220F7ABFA00D91654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReSwift-iOS";
+			targetProxy = 2897C72120F7ABFA00D91654 /* PBXContainerItemProxy */;
+		};
+		28B10BF820BDECE400122AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28B10BF120BDECE300122AF2 /* Koober_iOS */;
+			targetProxy = 28B10BF720BDECE400122AF2 /* PBXContainerItemProxy */;
+		};
+		9F8A89CC1FAD67360096B294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F8A89C51FAD67360096B294 /* KooberUIKit */;
+			targetProxy = 9F8A89CB1FAD67360096B294 /* PBXContainerItemProxy */;
+		};
+		9F8A89DE1FAD67480096B294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F8A89D71FAD67480096B294 /* KooberKit */;
+			targetProxy = 9F8A89DD1FAD67480096B294 /* PBXContainerItemProxy */;
+		};
+		9F9420E5208A4294002ACDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-iOS";
+			targetProxy = 9F9420E4208A4294002ACDC7 /* PBXContainerItemProxy */;
+		};
+		9F9420F1208A42BE002ACDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			targetProxy = 9F9420F0208A42BE002ACDC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28B10BFB20BDECE400122AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Koober_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Koober-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28B10BFC20BDECE400122AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Koober_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Koober-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F8A89B61FAD64D50096B294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F8A89B71FAD64D50096B294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F8A89B91FAD64D50096B294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Koober/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Koober;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F8A89BA1FAD64D50096B294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Koober/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Koober;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F8A89D01FAD67360096B294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KooberUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F8A89D11FAD67360096B294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KooberUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F8A89E21FAD67480096B294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KooberKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F8A89E31FAD67480096B294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KooberKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28B10C1B20BDECE400122AF2 /* Build configuration list for PBXNativeTarget "Koober_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B10BFB20BDECE400122AF2 /* Debug */,
+				28B10BFC20BDECE400122AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8A89A11FAD64D50096B294 /* Build configuration list for PBXProject "KooberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8A89B61FAD64D50096B294 /* Debug */,
+				9F8A89B71FAD64D50096B294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8A89B81FAD64D50096B294 /* Build configuration list for PBXNativeTarget "Koober" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8A89B91FAD64D50096B294 /* Debug */,
+				9F8A89BA1FAD64D50096B294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8A89CF1FAD67360096B294 /* Build configuration list for PBXNativeTarget "KooberUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8A89D01FAD67360096B294 /* Debug */,
+				9F8A89D11FAD67360096B294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8A89E11FAD67480096B294 /* Build configuration list for PBXNativeTarget "KooberKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8A89E21FAD67480096B294 /* Debug */,
+				9F8A89E31FAD67480096B294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F8A899E1FAD64D50096B294 /* Project object */;
+}
