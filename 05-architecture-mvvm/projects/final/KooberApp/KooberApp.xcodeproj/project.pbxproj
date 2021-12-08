@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,8 +57,6 @@
 		28B10C4E20BDF0CE00122AF2 /* RideOptionSegmentButtonImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B1461FAD6CBF009B5587 /* RideOptionSegmentButtonImageLoader.swift */; };
 		28B10C4F20BDF0D300122AF2 /* SendingRideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16D1FAD6CC0009B5587 /* SendingRideRequestViewController.swift */; };
 		28B10C5020BDF0D300122AF2 /* SendingRideRequestRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47B16C1FAD6CC0009B5587 /* SendingRideRequestRootView.swift */; };
-		28B10C5120BDF15500122AF2 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
-		28B10C5420BDF16000122AF2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
 		28B10C5D20BDFE6500122AF2 /* NotSignedInResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B10C5C20BDFE6500122AF2 /* NotSignedInResponder.swift */; };
 		28B10C5F20BDFEA500122AF2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B10C5E20BDFEA500122AF2 /* OnboardingView.swift */; };
 		28B10C6120BDFED800122AF2 /* GoToSignInNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B10C6020BDFED800122AF2 /* GoToSignInNavigator.swift */; };
@@ -144,13 +142,6 @@
 		9F8A89DC1FAD67480096B294 /* KooberKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8A89DA1FAD67480096B294 /* KooberKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8A89DF1FAD67480096B294 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
 		9F8A89E01FAD67480096B294 /* KooberKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F942082208A411A002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
-		9F9420DE208A4174002ACDC7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
-		9F9420E1208A4192002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
-		9F9420E2208A4294002ACDC7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; };
-		9F9420E3208A4294002ACDC7 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9420D1208A4169002ACDC7 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F9420EE208A42BE002ACDC7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; };
-		9F9420EF208A42BE002ACDC7 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F942077208A4115002ACDC7 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F96BDE1209E685600F13F88 /* RideOptionPickerRideOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE0209E685500F13F88 /* RideOptionPickerRideOptions.swift */; };
 		9F96BDF1209E69B300F13F88 /* UserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE4209E69B300F13F88 /* UserSessionDataStore.swift */; };
 		9F96BDF2209E69B300F13F88 /* FakeUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96BDE6209E69B300F13F88 /* FakeUserSessionDataStore.swift */; };
@@ -166,6 +157,8 @@
 		9FBB2EA51FAE450E0086363B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB2EA41FAE450E0086363B /* Identifiable.swift */; };
 		9FC897851FAE512400B1A8B0 /* KooberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A89D81FAD67480096B294 /* KooberKit.framework */; };
 		9FE690DE20B4EACE00F1E124 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE690DD20B4EACE00F1E124 /* NavigationAction.swift */; };
+		AE719ECB276070FD0078614D /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE719ECA276070FD0078614D /* PromiseKit */; };
+		AE719ECE276071650078614D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AE719ECD276071650078614D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,34 +183,6 @@
 			remoteGlobalIDString = 9F8A89D71FAD67480096B294;
 			remoteInfo = KooberKit;
 		};
-		9F942076208A4115002ACDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 63B0AC571D595E1B00FA21D9;
-			remoteInfo = PromiseKit;
-		};
-		9F9420D0208A4169002ACDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
-			remoteInfo = "Kingfisher-iOS";
-		};
-		9F9420E4208A4294002ACDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
-			remoteInfo = "Kingfisher-iOS";
-		};
-		9F9420F0208A42BE002ACDC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
-			remoteInfo = PromiseKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -228,9 +193,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9F8A89CE1FAD67360096B294 /* KooberUIKit.framework in Embed Frameworks */,
-				9F9420E3208A4294002ACDC7 /* Kingfisher.framework in Embed Frameworks */,
 				28B10BFA20BDECE400122AF2 /* Koober_iOS.framework in Embed Frameworks */,
-				9F9420EF208A42BE002ACDC7 /* PromiseKit.framework in Embed Frameworks */,
 				9F8A89E01FAD67480096B294 /* KooberKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -372,9 +335,6 @@
 		9F8A89D81FAD67480096B294 /* KooberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KooberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8A89DA1FAD67480096B294 /* KooberKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KooberKit.h; sourceTree = "<group>"; };
 		9F8A89DB1FAD67480096B294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F8A89E41FAD67F60096B294 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PromiseKit.xcodeproj; path = Carthage/Checkouts/PromiseKit/PromiseKit.xcodeproj; sourceTree = "<group>"; };
-		9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Carthage/Checkouts/Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
 		9F96BDE0209E685500F13F88 /* RideOptionPickerRideOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideOptionPickerRideOptions.swift; sourceTree = "<group>"; };
 		9F96BDE4209E69B300F13F88 /* UserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionDataStore.swift; sourceTree = "<group>"; };
 		9F96BDE6209E69B300F13F88 /* FakeUserSessionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUserSessionDataStore.swift; sourceTree = "<group>"; };
@@ -397,8 +357,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B10C5420BDF16000122AF2 /* Kingfisher.framework in Frameworks */,
-				28B10C5120BDF15500122AF2 /* PromiseKit.framework in Frameworks */,
 				28B10C2820BDEF6400122AF2 /* KooberKit.framework in Frameworks */,
 				28B10C2920BDEF6400122AF2 /* KooberUIKit.framework in Frameworks */,
 			);
@@ -409,10 +367,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8A89CD1FAD67360096B294 /* KooberUIKit.framework in Frameworks */,
-				9F9420E2208A4294002ACDC7 /* Kingfisher.framework in Frameworks */,
+				AE719ECB276070FD0078614D /* PromiseKit in Frameworks */,
 				28B10BF920BDECE400122AF2 /* Koober_iOS.framework in Frameworks */,
-				9F9420EE208A42BE002ACDC7 /* PromiseKit.framework in Frameworks */,
 				9F8A89DF1FAD67480096B294 /* KooberKit.framework in Frameworks */,
+				AE719ECE276071650078614D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +378,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F9420E1208A4192002ACDC7 /* PromiseKit.framework in Frameworks */,
-				9F9420DE208A4174002ACDC7 /* Kingfisher.framework in Frameworks */,
 				9FC897851FAE512400B1A8B0 /* KooberKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +386,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F942082208A411A002ACDC7 /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,24 +845,13 @@
 			path = GettingUsersLocation;
 			sourceTree = "<group>";
 		};
-		9F707D9420B098130042AD5C /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */,
-				9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */,
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
 		9F8A899D1FAD64D50096B294 = {
 			isa = PBXGroup;
 			children = (
-				9F8A89E41FAD67F60096B294 /* Cartfile */,
 				9F8A89A81FAD64D50096B294 /* Koober */,
 				28B10BF320BDECE400122AF2 /* Koober_iOS */,
 				9F8A89C71FAD67360096B294 /* KooberUIKit */,
 				9F8A89D91FAD67480096B294 /* KooberKit */,
-				9F707D9420B098130042AD5C /* Libraries */,
 				9F8A89A71FAD64D50096B294 /* Products */,
 				9F8A8A181FAD68290096B294 /* Frameworks */,
 			);
@@ -963,22 +907,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9F94206E208A4115002ACDC7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F942077208A4115002ACDC7 /* PromiseKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9F9420C7208A4169002ACDC7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F9420D1208A4169002ACDC7 /* Kingfisher.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9F96BDE2209E69B300F13F88 /* Persistence */ = {
@@ -1170,11 +1098,13 @@
 			dependencies = (
 				9F8A89CC1FAD67360096B294 /* PBXTargetDependency */,
 				9F8A89DE1FAD67480096B294 /* PBXTargetDependency */,
-				9F9420E5208A4294002ACDC7 /* PBXTargetDependency */,
-				9F9420F1208A42BE002ACDC7 /* PBXTargetDependency */,
 				28B10BF820BDECE400122AF2 /* PBXTargetDependency */,
 			);
 			name = Koober;
+			packageProductDependencies = (
+				AE719ECA276070FD0078614D /* PromiseKit */,
+				AE719ECD276071650078614D /* Kingfisher */,
+			);
 			productName = Koober;
 			productReference = 9F8A89A61FAD64D50096B294 /* Koober.app */;
 			productType = "com.apple.product-type.application";
@@ -1256,18 +1186,12 @@
 				Base,
 			);
 			mainGroup = 9F8A899D1FAD64D50096B294;
+			packageReferences = (
+				AE719EC9276070FD0078614D /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				AE719ECC276071650078614D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9F8A89A71FAD64D50096B294 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9F9420C7208A4169002ACDC7 /* Products */;
-					ProjectRef = 9F9420C6208A4169002ACDC7 /* Kingfisher.xcodeproj */;
-				},
-				{
-					ProductGroup = 9F94206E208A4115002ACDC7 /* Products */;
-					ProjectRef = 9F94206D208A4115002ACDC7 /* PromiseKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				9F8A89A51FAD64D50096B294 /* Koober */,
@@ -1277,23 +1201,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9F942077208A4115002ACDC7 /* PromiseKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PromiseKit.framework;
-			remoteRef = 9F942076208A4115002ACDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9F9420D1208A4169002ACDC7 /* Kingfisher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Kingfisher.framework;
-			remoteRef = 9F9420D0208A4169002ACDC7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		28B10BF020BDECE300122AF2 /* Resources */ = {
@@ -1511,16 +1418,6 @@
 			target = 9F8A89D71FAD67480096B294 /* KooberKit */;
 			targetProxy = 9F8A89DD1FAD67480096B294 /* PBXContainerItemProxy */;
 		};
-		9F9420E5208A4294002ACDC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Kingfisher-iOS";
-			targetProxy = 9F9420E4208A4294002ACDC7 /* PBXContainerItemProxy */;
-		};
-		9F9420F1208A42BE002ACDC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PromiseKit;
-			targetProxy = 9F9420F0208A42BE002ACDC7 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -1539,7 +1436,11 @@
 				INFOPLIST_FILE = Koober_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Koober-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1565,7 +1466,11 @@
 				INFOPLIST_FILE = Koober_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Koober-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1682,7 +1587,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1698,7 +1604,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Koober/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Koober;
@@ -1721,7 +1630,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Koober/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Koober;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1744,7 +1656,11 @@
 				INFOPLIST_FILE = KooberUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1769,7 +1685,11 @@
 				INFOPLIST_FILE = KooberUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1794,7 +1714,11 @@
 				INFOPLIST_FILE = KooberKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1819,7 +1743,11 @@
 				INFOPLIST_FILE = KooberKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.KooberKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1879,6 +1807,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE719EC9276070FD0078614D /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.16.1;
+			};
+		};
+		AE719ECC276071650078614D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE719ECA276070FD0078614D /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE719EC9276070FD0078614D /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		AE719ECD276071650078614D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE719ECC276071650078614D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F8A899E1FAD64D50096B294 /* Project object */;
 }
