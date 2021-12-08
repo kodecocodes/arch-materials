@@ -28,7 +28,7 @@
 
 import Foundation
 
-protocol SignedInIxResponder: class {
+protocol SignedInIxResponder: AnyObject {
 
   func goToProfile()
 }

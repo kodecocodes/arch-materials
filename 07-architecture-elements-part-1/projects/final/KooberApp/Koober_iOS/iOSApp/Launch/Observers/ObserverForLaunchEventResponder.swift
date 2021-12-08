@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForLaunchEventResponder: class {
+protocol ObserverForLaunchEventResponder: AnyObject {
 
   func received(newErrorMessage errorMessage: ErrorMessage)
 }

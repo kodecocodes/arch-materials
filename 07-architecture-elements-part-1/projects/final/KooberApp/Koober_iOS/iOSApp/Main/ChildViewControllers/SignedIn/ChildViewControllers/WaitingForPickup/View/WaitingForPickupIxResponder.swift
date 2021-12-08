@@ -28,7 +28,7 @@
 
 import Foundation
 
-protocol WaitingForPickupIxResponder: class {
+protocol WaitingForPickupIxResponder: AnyObject {
 
   func startNewRide()
 }

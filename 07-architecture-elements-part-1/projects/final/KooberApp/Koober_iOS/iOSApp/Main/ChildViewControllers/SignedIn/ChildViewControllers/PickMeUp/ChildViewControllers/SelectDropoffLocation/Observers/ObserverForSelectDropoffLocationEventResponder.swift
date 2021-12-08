@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForSelectDropoffLocationEventResponder: class {
+protocol ObserverForSelectDropoffLocationEventResponder: AnyObject {
 
   func received(newDropoffLocationPickerState dropoffLocationPickerState: DropoffLocationPickerViewControllerState)
   func received(newErrorMessage errorMessage: ErrorMessage)

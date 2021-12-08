@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol SignInIxResponder: class {
+protocol SignInIxResponder: AnyObject {
   
   func signIn(email: String, password: Secret)
 }

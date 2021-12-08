@@ -28,7 +28,7 @@
 
 import Foundation
 
-protocol WelcomeIxResponder: class {
+protocol WelcomeIxResponder: AnyObject {
 
   func goToSignIn()
   func goToSignUp()

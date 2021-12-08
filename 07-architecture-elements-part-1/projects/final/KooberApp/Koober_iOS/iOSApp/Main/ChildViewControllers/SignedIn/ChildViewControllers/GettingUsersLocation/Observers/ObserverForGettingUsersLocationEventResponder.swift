@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForGettingUsersLocationEventResponder: class {
+protocol ObserverForGettingUsersLocationEventResponder: AnyObject {
 
   func received(newErrorMessage errorMessage: ErrorMessage)
 }

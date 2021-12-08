@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForSignUpEventResponder: class {
+protocol ObserverForSignUpEventResponder: AnyObject {
 
   func received(newErrorMessage errorMessage: ErrorMessage)
   func keyboardWillHide()

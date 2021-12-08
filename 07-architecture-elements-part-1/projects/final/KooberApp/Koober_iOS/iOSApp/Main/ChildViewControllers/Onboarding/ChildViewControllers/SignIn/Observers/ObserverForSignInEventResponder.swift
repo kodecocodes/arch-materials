@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForSignInEventResponder: class {
+protocol ObserverForSignInEventResponder: AnyObject {
 
   func received(newErrorMessage errorMessage: ErrorMessage)
   func received(newViewState viewState: SignInViewState)

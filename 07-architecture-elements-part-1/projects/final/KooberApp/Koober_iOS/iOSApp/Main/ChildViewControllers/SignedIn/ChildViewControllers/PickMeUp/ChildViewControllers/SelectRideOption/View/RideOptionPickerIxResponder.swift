@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol RideOptionPickerIxResponder: class {
+protocol RideOptionPickerIxResponder: AnyObject {
 
   func select(rideOption rideOptionID: RideOptionID)
 }

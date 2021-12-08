@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForPickMeUpMapEventResponder: class {
+protocol ObserverForPickMeUpMapEventResponder: AnyObject {
 
   func received(newMapState mapState: MapViewControllerState)
 }

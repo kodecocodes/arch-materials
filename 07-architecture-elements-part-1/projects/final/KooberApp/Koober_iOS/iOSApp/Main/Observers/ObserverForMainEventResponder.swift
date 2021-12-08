@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForMainEventResponder: class {
+protocol ObserverForMainEventResponder: AnyObject {
 
   func transitionToNew(mainViewControllerState: MainViewControllerState)
 }

@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForProfileEventResponder: class {
+protocol ObserverForProfileEventResponder: AnyObject {
 
   func received(newUserProfile userProfile: UserProfile)
   func received(newErrorMessage errorMessage: ErrorMessage)

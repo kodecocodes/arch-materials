@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForRideOptionPickerEventResponder: class {
+protocol ObserverForRideOptionPickerEventResponder: AnyObject {
 
   func received(newRideOptionSegmentedControlState rideOptionSegmentedControlState: RideOptionSegmentedControlState)
   func received(newErrorMessage errorMessage: ErrorMessage)

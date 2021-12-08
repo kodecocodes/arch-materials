@@ -28,7 +28,7 @@
 
 import Foundation
 
-protocol PickMeUpIxResponder: class {
+protocol PickMeUpIxResponder: AnyObject {
 
   func goToDropoffLocationPicker()
 }

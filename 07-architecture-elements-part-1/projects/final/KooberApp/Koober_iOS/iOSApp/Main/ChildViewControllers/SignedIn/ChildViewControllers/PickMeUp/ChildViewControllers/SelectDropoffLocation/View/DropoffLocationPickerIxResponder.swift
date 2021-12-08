@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol DropoffLocationPickerIxResponder: class {
+protocol DropoffLocationPickerIxResponder: AnyObject {
 
   func select(dropoffLocation: Location)
 }

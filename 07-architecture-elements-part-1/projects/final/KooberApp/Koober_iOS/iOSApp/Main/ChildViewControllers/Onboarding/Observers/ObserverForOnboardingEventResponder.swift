@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForOnboardingEventResponder: class {
+protocol ObserverForOnboardingEventResponder: AnyObject {
 
   func transitionToNew(onboardingState: OnboardingState)
 }

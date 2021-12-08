@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForPickMeUpEventResponder: class {
+protocol ObserverForPickMeUpEventResponder: AnyObject {
 
   func received(newShouldDisplayWhereTo shouldDisplayWhereTo: Bool)
   func received(newPickMeUpView pickMeUpView: PickMeUpView)

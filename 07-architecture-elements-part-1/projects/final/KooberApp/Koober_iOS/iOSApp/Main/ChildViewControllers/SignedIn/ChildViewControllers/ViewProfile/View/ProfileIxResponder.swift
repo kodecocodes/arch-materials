@@ -28,7 +28,7 @@
 
 import Foundation
 
-protocol ProfileIxResponder: class {
+protocol ProfileIxResponder: AnyObject {
 
   func signOut()
 }

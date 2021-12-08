@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol ObserverForSignedInEventResponder: class {
+protocol ObserverForSignedInEventResponder: AnyObject {
 
   func transitionTo(showingProfileScreen: Bool)
   func transitionToNew(newRideState: NewRideState)

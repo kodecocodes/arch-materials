@@ -29,7 +29,7 @@
 import Foundation
 import KooberKit
 
-protocol SignUpIxResponder: class {
+protocol SignUpIxResponder: AnyObject {
   
   func signUp(_ newAccount: NewAccount)
 }
