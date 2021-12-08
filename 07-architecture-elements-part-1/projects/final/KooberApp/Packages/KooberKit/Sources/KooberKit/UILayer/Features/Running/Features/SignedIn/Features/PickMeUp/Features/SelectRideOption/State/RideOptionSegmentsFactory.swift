@@ -26,29 +26,44 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import KooberiOS
+import Foundation
+import CoreGraphics
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+public class RideOptionSegmentsFactory {
 
   // MARK: - Properties
-  let injectionContainer = KooberAppDependencyContainer()
-  let window = UIWindow()
+  let rideOptions: [RideOption]
+  let selectedRideOptionID: RideOptionID
 
   // MARK: - Methods
-  func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
-    setUpWindow(withRootViewController: mainVC)
-    return true
+  public init(state: RideOptionPickerRideOptions) {
+    self.rideOptions = state.rideOptions
+    self.selectedRideOptionID = state.selectedRideOptionID
   }
 
-  func setUpWindow(withRootViewController rootViewController: UIViewController) {
-    window.frame = UIScreen.main.bounds
-    window.makeKeyAndVisible()
-    window.rootViewController = rootViewController
+  public func makeSegments(screenScale: CGFloat) -> [RideOptionSegmentState] {
+    return rideOptions.map(makeSegment(screenScale: screenScale))
+  }
+
+  private func makeSegment(screenScale: CGFloat) -> (RideOption) -> RideOptionSegmentState {
+    return { (rideOption: RideOption) -> RideOptionSegmentState in
+      return self.makeSegment(fromRideOption: rideOption, screenScale: screenScale)
+    }
+  }
+
+  private func makeSegment(fromRideOption rideOption: RideOption, screenScale: CGFloat) -> RideOptionSegmentState {
+    let placeholderNormalImageURL = rideOption
+                                      .buttonRemoteImages
+                                      .unselected
+                                      .url(forScreenScale: screenScale)
+    let placeholderSelectedImageURL = rideOption
+                                        .buttonRemoteImages
+                                        .selected
+                                        .url(forScreenScale: screenScale)
+    return RideOptionSegmentState(id: rideOption.id,
+                                      title: rideOption.name,
+                                      isSelected: rideOption.id == selectedRideOptionID,
+                                      images: .notLoaded(normal: placeholderNormalImageURL,
+                                                         selected: placeholderSelectedImageURL))
   }
 }

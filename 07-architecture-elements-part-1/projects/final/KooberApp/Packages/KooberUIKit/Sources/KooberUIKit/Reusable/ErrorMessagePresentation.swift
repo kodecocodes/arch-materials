@@ -26,29 +26,23 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
+import Foundation
+import KooberKit
 import UIKit
-import KooberiOS
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  // MARK: - Properties
-  let injectionContainer = KooberAppDependencyContainer()
-  let window = UIWindow()
-
-  // MARK: - Methods
-  func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
-    setUpWindow(withRootViewController: mainVC)
-    return true
+extension UIViewController {
+  public func present(_ errorMessage: ErrorMessage) {
+    let alert = UIAlertController(title: errorMessage.title,
+                                  message: errorMessage.message,
+                                  preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
+    present(alert, animated: true, completion: nil)
   }
+}
 
-  func setUpWindow(withRootViewController rootViewController: UIViewController) {
-    window.frame = UIScreen.main.bounds
-    window.makeKeyAndVisible()
-    window.rootViewController = rootViewController
+extension ErrorMessage {
+  public static func makeUnknown() -> ErrorMessage {
+    return ErrorMessage(title: "Unknown Issue",
+                        message: "Koober ran into an unexpected issue, please try again or contact us.")
   }
 }

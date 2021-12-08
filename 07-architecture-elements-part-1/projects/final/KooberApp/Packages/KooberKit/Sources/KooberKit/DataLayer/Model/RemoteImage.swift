@@ -26,29 +26,33 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import KooberiOS
+import Foundation
+import CoreGraphics
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+public struct RemoteImage: Decodable {
 
   // MARK: - Properties
-  let injectionContainer = KooberAppDependencyContainer()
-  let window = UIWindow()
+  public var at1xURL: URL
+  public var at2xURL: URL
+  public var at3xURL: URL
 
   // MARK: - Methods
-  func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
-    setUpWindow(withRootViewController: mainVC)
-    return true
+  public init(at1xURL: URL, at2xURL: URL, at3xURL: URL) {
+    self.at1xURL = at1xURL
+    self.at2xURL = at2xURL
+    self.at3xURL = at3xURL
   }
 
-  func setUpWindow(withRootViewController rootViewController: UIViewController) {
-    window.frame = UIScreen.main.bounds
-    window.makeKeyAndVisible()
-    window.rootViewController = rootViewController
+  public func url(forScreenScale scale: CGFloat) -> URL {
+    switch scale {
+    case 1.0:
+      return at1xURL
+    case 2.0:
+      return at2xURL
+    case 3.0:
+      return at3xURL
+    default:
+      return at1xURL
+    }
   }
 }

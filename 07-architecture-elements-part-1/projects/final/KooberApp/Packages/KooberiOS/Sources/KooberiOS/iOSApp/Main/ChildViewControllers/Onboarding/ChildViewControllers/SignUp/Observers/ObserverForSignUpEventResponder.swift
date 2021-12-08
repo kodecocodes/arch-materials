@@ -26,29 +26,13 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import KooberiOS
+import Foundation
+import CoreGraphics
+import KooberKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+protocol ObserverForSignUpEventResponder: AnyObject {
 
-  // MARK: - Properties
-  let injectionContainer = KooberAppDependencyContainer()
-  let window = UIWindow()
-
-  // MARK: - Methods
-  func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
-    setUpWindow(withRootViewController: mainVC)
-    return true
-  }
-
-  func setUpWindow(withRootViewController rootViewController: UIViewController) {
-    window.frame = UIScreen.main.bounds
-    window.makeKeyAndVisible()
-    window.rootViewController = rootViewController
-  }
+  func received(newErrorMessage errorMessage: ErrorMessage)
+  func keyboardWillHide()
+  func keyboardWillChangeFrame(keyboardEndFrame: CGRect)
 }
