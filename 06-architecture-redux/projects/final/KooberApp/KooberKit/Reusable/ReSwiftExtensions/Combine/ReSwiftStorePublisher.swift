@@ -30,8 +30,8 @@ import Foundation
 import ReSwift
 import Combine
 
-public typealias TransformClosure<StateT: StateType, SelectedStateT: Equatable> = (ReSwift.Subscription<StateT>) -> ReSwift.Subscription<SelectedStateT>
-public typealias ScopedTransformClosure<StateT: StateType, SelectedStateT: Equatable> = (ReSwift.Subscription<StateT>) -> ReSwift.Subscription<ScopedState<SelectedStateT>>
+public typealias TransformClosure<StateT: Any, SelectedStateT: Equatable> = (ReSwift.Subscription<StateT>) -> ReSwift.Subscription<SelectedStateT>
+public typealias ScopedTransformClosure<StateT: Any, SelectedStateT: Equatable> = (ReSwift.Subscription<StateT>) -> ReSwift.Subscription<ScopedState<SelectedStateT>>
 
 extension Store where State: Equatable {
 
@@ -99,7 +99,7 @@ extension Store where State: Equatable {
   }
 }
 
-private final class StateSubscription<S: Subscriber, StateT: StateType>: Combine.Subscription, StoreSubscriber where S.Input == StateT {
+private final class StateSubscription<S: Subscriber, StateT: Any>: Combine.Subscription, StoreSubscriber where S.Input == StateT {
   var requested: Subscribers.Demand = .none
   var subscriber: S?
 
@@ -139,7 +139,7 @@ private final class StateSubscription<S: Subscriber, StateT: StateType>: Combine
 }
 
 private final class FilteredStateSubscription
-  <S: Subscriber, StateT: StateType, SelectedStateT: Equatable>:
+  <S: Subscriber, StateT: Any, SelectedStateT: Equatable>:
   Combine.Subscription, StoreSubscriber where S.Input == SelectedStateT {
 
   var requested: Subscribers.Demand = .none
@@ -183,7 +183,7 @@ private final class FilteredStateSubscription
   }
 }
 
-private final class ScopedFilteredStateSubscription<S: Subscriber, StateT: StateType, SelectedStateT: Equatable>: Combine.Subscription, StoreSubscriber where S.Input == SelectedStateT {
+private final class ScopedFilteredStateSubscription<S: Subscriber, StateT: Any, SelectedStateT: Equatable>: Combine.Subscription, StoreSubscriber where S.Input == SelectedStateT {
   var requested: Subscribers.Demand = .none
   var subscriber: S?
 
