@@ -40,6 +40,6 @@ class MapAnnotionDiff {
     let annotationsToRemove = Array(current.subtracting(updated))
     let annotationsToAdd = Array(updated.subtracting(current))
 
-    return (annotationsToAdd: annotationsToAdd, annotationsToRemove: annotationsToRemove)
+    return (annotationsToRemove: annotationsToRemove, annotationsToAdd: annotationsToAdd)
   }
 }
