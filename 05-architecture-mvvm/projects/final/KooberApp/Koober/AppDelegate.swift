@@ -27,7 +27,7 @@
 /// THE SOFTWARE.
 
 import UIKit
-import Koober_iOS
+import KooberiOS
 import KooberUIKit
 import KooberKit
 import PromiseKit
