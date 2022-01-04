@@ -26,14 +26,33 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+import Foundation
+import CoreGraphics
 
-//! Project version number for Koober_iOS.
-FOUNDATION_EXPORT double Koober_iOSVersionNumber;
+public struct RemoteImage: Decodable {
 
-//! Project version string for Koober_iOS.
-FOUNDATION_EXPORT const unsigned char Koober_iOSVersionString[];
+  // MARK: - Properties
+  public var at1xURL: URL
+  public var at2xURL: URL
+  public var at3xURL: URL
 
-// In this header, you should import all the public headers of your framework using statements like #import <Koober_iOS/PublicHeader.h>
+  // MARK: - Methods
+  public init(at1xURL: URL, at2xURL: URL, at3xURL: URL) {
+    self.at1xURL = at1xURL
+    self.at2xURL = at2xURL
+    self.at3xURL = at3xURL
+  }
 
-
+  public func url(forScreenScale scale: CGFloat) -> URL {
+    switch scale {
+    case 1.0:
+      return at1xURL
+    case 2.0:
+      return at2xURL
+    case 3.0:
+      return at3xURL
+    default:
+      return at1xURL
+    }
+  }
+}

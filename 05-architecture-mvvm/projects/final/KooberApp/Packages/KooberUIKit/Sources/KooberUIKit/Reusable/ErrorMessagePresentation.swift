@@ -26,14 +26,25 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+import Foundation
+import UIKit
+import KooberKit
 
-//! Project version number for KooberKit.
-FOUNDATION_EXPORT double KooberKitVersionNumber;
+extension UIViewController {
 
-//! Project version string for KooberKit.
-FOUNDATION_EXPORT const unsigned char KooberKitVersionString[];
+  public func present(_ errorMessage: ErrorMessage) {
+    let alert = UIAlertController(title: errorMessage.title,
+                                  message: errorMessage.message,
+                                  preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
+    present(alert, animated: true)
+  }
+}
 
-// In this header, you should import all the public headers of your framework using statements like #import <KooberKit/PublicHeader.h>
+extension ErrorMessage {
 
-
+  public static func makeUnknown() -> ErrorMessage {
+    return ErrorMessage(title: "Unknown Issue",
+                        message: "Koober ran into an unexpected issue, please try again or contact us.")
+  }
+}

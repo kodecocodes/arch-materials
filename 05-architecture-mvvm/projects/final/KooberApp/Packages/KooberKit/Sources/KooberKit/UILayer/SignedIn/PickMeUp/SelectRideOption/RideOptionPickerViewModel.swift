@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import Foundation
+import CoreGraphics
 import Combine
 import PromiseKit
 
