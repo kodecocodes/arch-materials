@@ -26,24 +26,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import KooberiOS
-import KooberUIKit
-import KooberKit
-import PromiseKit
+import Foundation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  let injectionContainer = KooberAppDependencyContainer()
-  var window: UIWindow?
+typealias MapAnnotationDiff = (annotationsToRemove: [MapAnnotation], annotationsToAdd: [MapAnnotation])
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
+class MapAnnotionDiff {
 
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.makeKeyAndVisible()
-    window?.rootViewController = mainVC
+  // MARK: - Methods
+  static func diff(currentAnnotations: [MapAnnotation], updatedAnnotations: [MapAnnotation]) -> MapAnnotationDiff {
+    let current = Set(currentAnnotations)
+    let updated = Set(updatedAnnotations)
 
-    return true
+    let annotationsToRemove = Array(current.subtracting(updated))
+    let annotationsToAdd = Array(updated.subtracting(current))
+
+    return (annotationsToRemove: annotationsToRemove, annotationsToAdd: annotationsToAdd)
   }
 }
