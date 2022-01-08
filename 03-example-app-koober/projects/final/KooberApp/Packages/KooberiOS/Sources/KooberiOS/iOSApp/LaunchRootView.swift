@@ -26,24 +26,31 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import KooberiOS
+import Foundation
+import CoreGraphics
 import KooberUIKit
 import KooberKit
-import PromiseKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  let injectionContainer = KooberAppDependencyContainer()
-  var window: UIWindow?
+class LaunchRootView: NiblessView {
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
-    let mainVC = injectionContainer.makeMainViewController()
+  // MARK: - Properties
+  let viewModel: LaunchViewModel
 
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.makeKeyAndVisible()
-    window?.rootViewController = mainVC
+  // MARK: - Methods
+  init(frame: CGRect = .zero,
+       viewModel: LaunchViewModel) {
+    self.viewModel = viewModel
+    super.init(frame: frame)
 
-    return true
+    styleView()
+    loadUserSession()
+  }
+
+  private func styleView() {
+    backgroundColor = Color.background
+  }
+
+  private func loadUserSession() {
+    viewModel.loadUserSession()
   }
 }
