@@ -27,16 +27,14 @@
 /// THE SOFTWARE.
 
 import UIKit
-import Koober_iOS
-import KooberUIKit
-import KooberKit
+import KooberiOS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: - Properties
   let injectionContainer = KooberAppDependencyContainer()
-  let window = UIWindow()
+  var window: UIWindow?
 
   // MARK: - Methods
   func application(
@@ -44,11 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     let mainVC = injectionContainer.makeMainViewController()
-    setUpWindow(withRootViewController: mainVC)
+
+    let window = UIWindow()
+    setUpWindow(window, withRootViewController: mainVC)
+    self.window = window
+
     return true
   }
 
-  func setUpWindow(withRootViewController rootViewController: UIViewController) {
+  func setUpWindow(_ window: UIWindow, withRootViewController rootViewController: UIViewController) {
     window.frame = UIScreen.main.bounds
     window.makeKeyAndVisible()
     window.rootViewController = rootViewController
