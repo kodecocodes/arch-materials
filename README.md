@@ -13,5 +13,5 @@ We’ve set up an official forum for the book at [https://forums.raywenderlich.c
 | Branch                                                                            | Edition | Release Date |
 | --------------------------------------------------------------------------------- |:-------:|:------------:|
 | [editions/3.0](https://github.com/raywenderlich/arch-materials/tree/editions/3.0) | 3.0     | 2020-09-01   |
-| [editions/4.0](https://github.com/raywenderlich/arch-materials/tree/editions/4.0) | 4.0     | YYYY-MM-DD   |
+| [editions/4.0](https://github.com/raywenderlich/arch-materials/tree/editions/4.0) | 4.0     | 2022-02-09   |
 
