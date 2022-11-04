@@ -57,9 +57,7 @@ public class LaunchViewController: NiblessViewController {
       .errorMessages
       .receive(on: DispatchQueue.main)
       .sink { [weak self] errorMessage in
-        guard let strongSelf = self else {
-          return
-        }
+        guard let strongSelf = self else { return }
         strongSelf.present(errorMessage: errorMessage,
                            withPresentationState: strongSelf.viewModel.errorPresentation)
       }.store(in: &subscriptions)
